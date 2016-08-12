@@ -1,4 +1,4 @@
-# deep-learners
+# study-group
 Deep Learning Study Group
 
 This study group focuses on learning more about deep learning. It's split between two areas - 
