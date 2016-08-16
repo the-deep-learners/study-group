@@ -220,7 +220,7 @@ y_conv = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
 
 # #### Train and Evaluate the Model
 
-# In[ ]:
+# In[34]:
 
 # Use ADAM optimizer instead of steepest gradient descent. 
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y_conv), reduction_indices=[1]))
@@ -236,7 +236,7 @@ for i in range(20000):
     train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
 
-# In[ ]:
+# In[35]:
 
 print("test accuracy %g"%accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
