@@ -25,16 +25,19 @@ meeting date: *09-06-2016*
 	- `a_l = σ(w_l*a_l-1 + b_l)`
 	- `z_l = w_l*a_l-1 + b_l`
 		- Weighted input of the neurons in layer l
+
   - #####The two assumptions we need about the cost function
 	- goal of backpropagation is to compute the partial derivatives of the cost function C with respect to any weight w aor bias b
 	- 2 assumptions about cost function
 		1. can be written as an average C = (1/n)∑_x C_x
 			- allows us to get partial derivatives by averaging partial derivatives of individual training samples
 		2. can be written as a function of the outputs from the neural network
+
   - #####The Hadamard product
 	- `s⊙t` denots *elementwise* product of two vectors s and t
 		- `(s⊙t)_j = s_j*t_j`
 		- called *Hadamard* or *Schur* product
+
   - #####The four fundamental equations behind backpropagation
 	- backpropagation is about understanding how changing the weights and biases in a network changes the cost function.
 	- `δ_l_j` represents the *error* in the jth neuron in the lth layer.
