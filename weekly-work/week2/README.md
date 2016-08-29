@@ -11,7 +11,7 @@ meeting date: *09-06-2016*
 	- fast alogrithm for computing gradients
 	- introduced in 1970s
 	- [This 1986 paper](http://www.nature.com/nature/journal/v323/n6088/pdf/323533a0.pdf) recognized the usefulness of its application in neural nets
-  - ##### Warm up: a fast matrix-based approach to computing output of neural net
+  - #####Warm up: a fast matrix-based approach to computing output of neural net
 	- 3 neuron components
 		- `w`: weight
 		- `b`: bias
