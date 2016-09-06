@@ -15,7 +15,7 @@ meeting date: *09-06-2016*
 	- introduced in 1970s
 	- [This 1986 paper](http://www.nature.com/nature/journal/v323/n6088/pdf/323533a0.pdf) recognized the usefulness of its application in neural nets
 
-  - #####Warm up: a fast matrix-based approach to computing output of neural net
+  - ####Warm up: a fast matrix-based approach to computing output of neural net
 	- 3 neuron components
 		- `w`: weight
 		- `b`: bias
@@ -29,19 +29,19 @@ meeting date: *09-06-2016*
 	- `z_l = w_l*a_l-1 + b_l`
 		- Weighted input of the neurons in layer l
 
-  - #####The two assumptions we need about the cost function
+  - ####The two assumptions we need about the cost function
 	- goal of backpropagation is to compute the partial derivatives of the cost function C with respect to any weight w aor bias b
 	- 2 assumptions about cost function
 		1. can be written as an average C = (1/n)∑_x C_x
 			- allows us to get partial derivatives by averaging partial derivatives of individual training samples
 		2. can be written as a function of the outputs from the neural network
 
-  - #####The Hadamard product
+  - ####The Hadamard product
 	- `s⊙t` denots *elementwise* product of two vectors s and t
 		- `(s⊙t)_j = s_j*t_j`
 		- called *Hadamard* or *Schur* product
 
-  - #####The four fundamental equations behind backpropagation
+  - ####The four fundamental equations behind backpropagation
 	- backpropagation is about understanding how changing the weights and biases in a network changes the cost function.
 	- `δ_l_j` represents the *error* in the jth neuron in the lth layer.
 		- with backpropagation we compute this error and then relate it to the partial derivatives
@@ -67,12 +67,12 @@ meeting date: *09-06-2016*
 		- proofs don't use an special properties of σ
 		- so we could pick an activation function whose derivative that is never close to 0 to prevent the slow-down of learning that occurs with saturated Sigmoid functions
 	
-  - #####Proof of the four fundamental equations (optional)
+  - ####Proof of the four fundamental equations (optional)
     - All four equations are consequences of the chain rule from multivariable calculus
     - because `a_L_j = σ(z_L_j)`, `∂a_L_j/∂z_L_j = σ′(z_L_j)`
     - We can think of backpropagation as a way of computing the gradient of the cost function by systematically applying chain rule from multi-variable calculus
   
-  - #####The backpropagation algorithm
+  - ####The backpropagation algorithm
   	- High-level steps
   		1. **Input** x: set corresponding activation a_1 for the input layer
   		2. **Feedforward**: for each l = 2, 3, ..., L compute `z_l = w_l*a_l-1 + b_l` and `a_l = σ(z_l)`
@@ -94,10 +94,10 @@ meeting date: *09-06-2016*
   			c. **Backpropagate the error**
   		3. **Gradient descent**: Fore each l = L, L-1, ..., 2 update the weights and biases based on learning rules for mini-batch
   		
-  - #####The code for backpropagation
+  - ####The code for backpropagation
   	- refers mostly to Nielsen's GitHub project [neural-networks-and-deep-learning](https://github.com/mnielsen/neural-networks-and-deep-learning)
   	
-  - #####In what sense is backpropagation a fast algorithm?
+  - ####In what sense is backpropagation a fast algorithm?
   	- Example calculation without backpropagation:
   		- approximate deriviative of cost: `∂C/∂wj ≈ (C(w+ϵej)−C(w))/ϵ`
   		- this is easy but very slow
@@ -105,7 +105,7 @@ meeting date: *09-06-2016*
   	- backpropagation allows us to simultaneously comput *all* partial derivatives using just one forward pass through the network, followed by a backward pass per training sample.
   		- this is MUCH faster
   
-  - #####Backpropagation: the big picture
+  - ####Backpropagation: the big picture
   	- 2 mysteries
   		1. Building deeper intuition around what's going on during all these matrix and vector multiplications
   		2. How could someone ever discover backpropagation in the first place?
