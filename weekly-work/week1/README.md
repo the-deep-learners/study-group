@@ -7,14 +7,12 @@ meeting date: *08-17-2016*
 - [Tensoflow intro tutorial](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html)
 
 
-http://neuralnetworksanddeeplearning.com/
-
 ###Nielsen Chapter 1
   - 2 important artificial neuron
     - perceptron
     - sigmoid
   - Standard learning algo for neural networks:  Stochastic Gradient Descent (SGD)
-  - #####Perceptrons
+  - ####Perceptrons
     - developed in 1950s and 60s
     - takes N binary inputs and produces a single binary output
       - output is 1 if weighted sum of inputs is > some threshold
@@ -28,14 +26,14 @@ http://neuralnetworksanddeeplearning.com/
       - this tuning happens in response to external stimuli
     - Instead of laying NAND gates out explicitly, neural networks can simply learn to solve problems
 
-  - #####Sigmoid neurons
+  - ####Sigmoid neurons
   	- Perceptrons are touchy. A small change in weight/bias can lead to drastic changes in outputs
   	- Segmoid's small changes in weight/bias lead to small output changes
   	- Inputs are not binary (any real between 0 and 1)
   	- `w*x + b` is now input into the Sigmoid/Logistic function to get the final output
   	- Sigmoid is a smoothed out step function (step function correlates to perceptron)
   
-  - #####The architecture of neural networks
+  - ####The architecture of neural networks
   	- input and output layers with hidden layers in between
   	- multilayer networks can be called multilayer perceptrons (MLPs), despite containing Sigmoid neurons
   	- Feedfoward
@@ -46,14 +44,14 @@ http://neuralnetworksanddeeplearning.com/
     	- less influential so far
     	- closer in spirit to how the human brain works
   
-  - #####Simple network to classify digits
+  - ####Simple network to classify digits
   	- 2 parts: digit segmentation and individual digit recognition
   	- Having good idividual digit recognition allows you to validate segmentation algo, so we'll focus on digit recogintion first
   	- Digit recognition
     	- input neurons 784 = 28 x 28 grayscale image pixels
     	- output neurons 10 and highest activation value corresponds to the digit estimate
   
-  - #####Learning with Gradient Descent
+  - ####Learning with Gradient Descent
   	- MNIST dataset
     	- training: 60,000 handwritten 28 X 28 images from 250 people
     	- test: 10,000 handwritten 28 X 28 images from 250 other people
@@ -75,6 +73,6 @@ http://neuralnetworksanddeeplearning.com/
     	- SGD approximates gradient by averaging indvidual gradients for a samll sample of inputs
       		- this is called a mini-batch
 
-  - #####Implementing our Network
+  - ####Implementing our Network
   	- backpropagation
     	- fast way of computing gradient of cost function
