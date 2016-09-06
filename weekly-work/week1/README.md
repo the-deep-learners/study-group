@@ -7,8 +7,6 @@ meeting date: *08-17-2016*
 - [Tensoflow intro tutorial](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html)
 
 
-http://neuralnetworksanddeeplearning.com/
-
 ###Nielsen Chapter 1
   - 2 important artificial neuron
     - perceptron
