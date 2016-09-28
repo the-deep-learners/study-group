@@ -93,7 +93,7 @@
 
 <body class="edit_app " 
 data-base-url="/"
-data-file-path="neural-net/ytrain.pickle"
+data-file-path="neural-net/data/pickled/ytrain.pickle"
 
 >
 
