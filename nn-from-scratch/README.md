@@ -12,3 +12,4 @@ The to do list:
 - Create more versatility in terms of number of layers, number of neurons per layer
 - Implement some form on minibatching? Is this practical / logical given the optimizer is doing the learning?
 - Speed. Right now, with 50000 images, it takes quite a while on my core i7 to train the model. SGD and mini-batching could speed this up, but I'm not sure how to implement it. Suggestions are welcome.
+- Switch to a SGD based model and remove the scipy.optimize function altogether
