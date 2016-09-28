@@ -6,6 +6,8 @@ This nn incorporates most of the features we've dealt with so far in the course 
 
 Note: everything is done in Python 3.X so if you ahven't updated yet, expect some things to break (most obviously, print()). Also, if you're on Python 2.X you'll likely want to look at MNIST-loader.ipynb and pickle your own data.
 
+Lastly, the MNIST-loader notebook throws warnings about converting uint8 data into float64 during the scaling process. This didn't seem unusual to me. I'm sure I could suppress the warnings, or do the conversion in the array before passing to the scaler.
+
 The to do list:
 - Create more versatility in terms of number of layers, number of neurons per layer
 - Implement some form on minibatching? Is this practical / logical given the optimizer is doing the?
