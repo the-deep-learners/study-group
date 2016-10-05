@@ -6,19 +6,19 @@ meeting date: *9-28-2016*
 - "Part I: Introduction" of Peleg and Maggio's [Keras tutorial](https://github.com/leriomaggio/deep-learning-keras-euroscipy2016) from EuroSciPy in August
 
 ###Nielsen Chapter 3: Improving the way Neural Networks Learn
-  - ####to avoid learning slowdown
+####to avoid learning slowdown
         - choose cost functions that learn more quickly when the predicted output is far from the desired one, e.g.:
                 - if you’d like to consider outputs independently, select sigmoid neurons paired with cross-entropy cost
                 - if you’d like to consider outputs simultaneously and as probability distributions, select a softmax layer of neurons with log-likelihood cost
-  - ####to avoid overfitting 
+####to avoid overfitting 
         - *stop training early*, i.e., when classification accuracy on test data flattens
         - use the popular [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) methodology
         - artificially expand your data set, e.g., by rotating MNIST digits slightly or adding noise to audio recordings
         - regularize: we covered [L1 and L2 regularization](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization) in detail, with nuclear physicist [Thomas Balestri](https://www.linkedin.com/in/thomasbalestri) leading elucidation 
-  - ####to initialize weights and biases
+####to initialize weights and biases
         - to avoid initial saturation of neurons, sample randomly from a normal distribution with mean of zero and a standard deviation of 1/√(n inputs)
-  - ####Nielsen’s suggested sequence for choosing hyper-parameters
-        1. Broad Strategy
+####Nielsen’s suggested sequence for choosing hyper-parameters
+        1. Broad Strategy 
                 - first, achieve any level of learning that is better than chance
                 - this may require simplifying the problem the network is trying to solve (e.g., distinguishing the digits 0 and 1 instead of attempting to classify all ten digits)
                 - this may require simplifying the network architecture or reducing the size of the training data by orders of magnitude
@@ -43,7 +43,7 @@ meeting date: *9-28-2016*
                 - re-visit and re-optimize both 𝜼 and ƛ
         6. Automated Techniques
                 - you can use a grid search, including open-source software, to optimize hyper-parameters automatically (e.g., [Spearmint](https://github.com/JasperSnoek/spearmint))
-  - ####Variations on Stochastic Gradient Descent
+####Variations on Stochastic Gradient Descent
         - Hessian optimization
                 - incorporates the gradient descent analogue of momentum (second-order changes) into weight and bias optimization
                 - demonstrably converges on a minimum in fewer steps than standard gradient descent
@@ -53,7 +53,7 @@ meeting date: *9-28-2016*
                 - to balance between speed and avoiding overshooting a minimum, involves tuning the momentum coefficient μ between zero and one on validation data
         - BFGS, limited-memory BFGS, Nesterov’s accelerated gradient
                 - these are further popular alternative methods, but we didn’t cover them in any detail
-  - ####Alternative Artificial Neurons
+####Alternative Artificial Neurons
         - tanh
                 - bizarrely, apparently pronounced "tanch"
                 - shape approximates the sigmoid function, but ranges from -1 to 1 instead of zero to one, thereby facilitating both positive and negative activations
