@@ -7,9 +7,9 @@ meeting date: *9-28-2016*
 
 ###Nielsen Chapter 3: Improving the way Neural Networks Learn
 ####to avoid learning slowdown
-        - choose cost functions that learn more quickly when the predicted output is far from the desired one, e.g.:
-                - if you’d like to consider outputs independently, select sigmoid neurons paired with cross-entropy cost
-                - if you’d like to consider outputs simultaneously and as probability distributions, select a softmax layer of neurons with log-likelihood cost
+- choose cost functions that learn more quickly when the predicted output is far from the desired one, e.g.:
+        - if you’d like to consider outputs independently, select sigmoid neurons paired with cross-entropy cost
+        - if you’d like to consider outputs simultaneously and as probability distributions, select a softmax layer of neurons with log-likelihood cost
 ####to avoid overfitting 
         - *stop training early*, i.e., when classification accuracy on test data flattens
         - use the popular [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) methodology
