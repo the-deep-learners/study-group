@@ -10,7 +10,7 @@ meeting date: 10-20-2016
 	
 ### Proof Neural Nets can Compute any Function
 
-* Neural nets can computer any function (i.e., they are *universal*), assuming that:
+* Neural nets can compute any function (i.e., they are *universal*), assuming that:
 	1. we accept they are an *approximation* (that can be improved by the inclusion of additional hidden neurons), as opposed to an *exact* solution
 	2. the function they are explaining is *continuous* (e.g., no sharp jumps)
 	
