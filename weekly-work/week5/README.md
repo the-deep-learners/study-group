@@ -17,7 +17,7 @@ Meeting date: November 10th, 2016
 
 #### Architecture Changes That Can Improve Classification Accuracy
 
-See [this Jupyter notebook](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week5/network3.ipynb) for a Theano-focused script (based on Nielsen's code and text) that incredmentally improves MNIST digit classification accuracy by: 
+See [this Jupyter notebook](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week5/network3.ipynb) for a Theano-focused script (based on Nielsen's code and text) that incrementally improves MNIST digit classification accuracy by: 
 
 1. increasing the number of convolutional-pooling layers
 2. using ReLU units in place of the sigmoid or _tanh_ variety
