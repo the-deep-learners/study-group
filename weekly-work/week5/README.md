@@ -47,4 +47,4 @@ See [this Jupyter notebook](https://github.com/the-deep-learners/study-group/blo
 
 ## Up Next
 
-[CS231n Convolutional Neural Networks for Visual Recognition] notes and videos (http://cs231n.github.io/)
+[CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) notes and videos
