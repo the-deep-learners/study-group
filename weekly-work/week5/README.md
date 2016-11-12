@@ -31,7 +31,7 @@ See [this Jupyter notebook](https://github.com/the-deep-learners/study-group/blo
 2. "powerful" regularization techniques (e.g., dropout) to reduce overfitting
 3. ReLU units (quicker training relative to sigmoid/_tanh_)
 4. using GPUs if we're training for many epochs
-5. sufficiently large set of training data (including algorithmic expanstion if possible)
+5. sufficiently large set of training data (including algorithmic expansion if possible)
 6. appropriate cost function choice
 7. sensible weight initialization
 
