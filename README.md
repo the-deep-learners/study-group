@@ -8,11 +8,6 @@ This study group focuses on learning more about deep learning. It's split betwee
 
 Initially, we'll focus on covering material in Michael Nielsen's book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/).
 
-# Schedule
+# Session Notes
 
-## Week 1
-
-* Read the [first chapter](http://neuralnetworksanddeeplearning.com/chap1.html) of Michael Nielsen’s e-book and complete the exercises.
-* [Install and configure TensorFlow](https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html)
-* Work through [this beginner TensorFlow tutorial](https://www.tensorflow.org/versions/r0.9/tutorials/mnist/beginners/index.html) involving the MNIST data set, which is also discussed in Nielsen’s first chapter
-* Clone this repository and add the material in a `week1` folder
+See the **weekly-work** subdirectories for what we cover each session, with rough notes. This is updated after each of our sessions, i.e., every third week. 
