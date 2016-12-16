@@ -78,6 +78,10 @@ The course notes linked to above provide excellent summaries of the material cov
 	* the "holy grail" is to be able to narrate a scene; people can write an essay after seeing a scene for just 500ms (Fei-Fei et al., 2007)
 * machines vision facilitates better robots and will save lives
 
+## Application
+
+Our colourful study group member [Dmitri Nesterenko](https://www.linkedin.com/in/dmitri-nesterenko-7ba4484), who is Director of Software Engineering at the **XO Group** downtown, went into considerable, helpful detail describing his adventures writing a *k*-Nearest Neighbours algorithm [from scratch](https://www.linkedin.com/in/dmitri-nesterenko-7ba4484). 
+
 ## Up Next
 
 1. the remaining lectures and notes of CS231n, split over two sessions, in January and February
