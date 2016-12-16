@@ -18,20 +18,20 @@ This was our first session since completing Michael Nielsen's [Neural Networks a
 
 The course notes linked to above provide excellent summaries of the material covered in the second lecture onward. For the first lecture, given by the illustrious Fei-Fei Li, here are my (i.e., Jon Krohn) own notes: 
 
-#### context
+#### Context
 
 * Cisco: 85% of data on Internet is in the form of pixels ("dark matter")
 * more video sensors on earth than people
 * every minute, 150 hours of video are uploaded to YouTube
 
-#### history of vision research
+#### A History of Vision and Vision Research
 
 * 543m years ago, explosion in speciation; Andrew Parker theorises this is due to the evolution of eyes (a simple pinhole light sensor in Trilobites)
 * first well-documented effort to duplicate the visual world: da Vinci's Camera Obscura (15th century)
 * Hubel & Wiesel (1959) Harvard postdocs 1981 Nobel Prize-winning work
 	* vision starts with simple structures (edges) not fish
 
-#### a brief history of computer vision
+#### A History of Computer Vision
 
 * Larry Roberts (1963) "Block World"
 	* theorised that edge detection enables recognition of blocks from many angles
@@ -78,7 +78,7 @@ The course notes linked to above provide excellent summaries of the material cov
 	* the "holy grail" is to be able to narrate a scene; people can write an essay after seeing a scene for just 500ms (Fei-Fei et al., 2007)
 * machines vision facilitates better robots and will save lives
 
-### Up Next
+## Up Next
 
 1. the remaining lectures and notes of CS231n, split over two sessions, in January and February
 1. RNN/LSTM courses and materials from Richard Socher and Chris Olah
