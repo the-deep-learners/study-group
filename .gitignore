@@ -1,4 +1,5 @@
 MNIST_data/
+demos-for-talks/mnist/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
