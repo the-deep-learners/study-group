@@ -30,7 +30,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 
 1. [Dr. Katya Vasilaky](https://kathrynthegreat.github.io/): on the mathematics of deep learning (*session II*) and on regularization (*session VIII*)
 2. [Dr. Thomas Balestri](https://www.linkedin.com/in/thomasbalestri): on countless machine-learning underpinnings (*sessions III and IV*)
-3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett): on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session 3*)
+3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett): on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
 2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko): on his NumPy implementation of k-Nearest Neighbours (*session VI*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire): on the deep learning start-up investment atmosphere (*session VIII*)
 
