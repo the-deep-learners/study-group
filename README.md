@@ -1,4 +1,4 @@
-# Deep Learning Study Group
+# study-group
 
 We are a diverse group of software engineering and data science professionals from industry and academia. 
 
