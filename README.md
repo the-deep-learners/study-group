@@ -12,7 +12,7 @@ Over the course of our sessions, we follow three parallel paths:
 
 ## Theory
 
-Thus far, we have covered: 
+Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of: 
 
 1. Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
 2. Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
@@ -40,4 +40,4 @@ In chronological order, we have experienced the joy of being enlightened by:
 See the [weekly work](https://github.com/the-deep-learners/study-group/tree/master/weekly-work) subdirectories for details of what we covered each session, with summary notes where they were deemed necessary. We provide updates after each of our sessions, i.e., approximately every third week. 
 
 
-*With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Dr. Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to be a deep learning expert already :)*
+*With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Dr. Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to be a deep learning expert already :)*
