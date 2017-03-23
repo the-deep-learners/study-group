@@ -33,6 +33,8 @@ In chronological order, we have experienced the joy of being enlightened by:
 3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett): on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
 2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko): on his NumPy implementation of k-Nearest Neighbours (*session VI*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire): on the deep learning start-up investment atmosphere (*session VIII*)
+3. [Soon-to-be-Dr. Grant Beyleveld](https://grantbeyleveld.wordpress.com/): on his implementation of the U-Net Convolutional Network (*session IX*)
+3. [Jessica Graves](https://sefleuria.tumblr.com/): on application of Deep Learning to the fashion industry (*session IX*)
 
 
 # Session Notes
