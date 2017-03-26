@@ -26,15 +26,61 @@ Topic highlights of the session included:
 
 #### From Lecture 14
 
-* content here
+##### Karpathy on ConvNets applied to motion (videos)
 
+* "fancy" spatio-temporal video ConvNets:
+	* for detecting global motion: provide limited or no benefit over LSTM applied to individual video frames 
+	* for detecting local motion, use a 3D ConvNet
+	* try using Optical Flow in a second stream or GRU-RCN (the latter being Karpathy's favourite)
 
+##### Johnson on unsupervised learning:
 
-#### From Lecture 15? 
-
-* content here
-
-
+* autoencoder overview
+	* traditional: 
+		* try to reconstruct input
+		* used to learn features, initialise supervised model
+		* no longer predominant 
+	* variational: 
+		* Bayesian statistics crossed with Deep Learning (<3)
+		* generate samples, e.g., images by sampling
+	* Generative Adversarial Networks: Generate samples
+* autoencoders in practice
+	* input data (x) --> [encoder] --> features (z) --> [decoder] --> reconstructed input data (x)
+	* the [encoder] and [decoder] often share weights
+	* decoders evolved via this sequence: 
+		1. linear + sigmoid neurons
+		2. deep, fully-connected
+		3. ReLU ConvNet ("upconv")
+* Greedy Training of Autoencoders:
+	* "Restricted Boltzmann Machines" (RBMs) were common in mid-2000s
+		* train one layer at a time
+		* start with first layer, freeze it, move to second layer, etc.
+* Varational Autoencoders:
+	* generate data by using Bayesian statistics within an autoencoder framework to sample from prior and posterior distributions
+	* can, e.g., output smooth interpolations of input data
+* Generative Adversarial Networks:
+	* seminal paper is Goodfellow et al. (NIPS 2014)
+	* random noise --> [generator] --> fake images (plus, separately, real images from a data set) --> [discriminator] --> trained to distinguish real images from fake
+	* image generation with "less math"
+	* train generator and discriminator jointly; after training, image generation is straightforward
+	* Denton et al. (NIPS 2015): expanded work by enabling discriminators to work at every scale (applied to single classes of CIFAR-10 dataset)
+	* Radford et al. (ICLR 2016): 
+		* create realistic, latent space-interpolatable images of bedrooms
+		* their generator: upsampling network with fractionally-strided convolutions
+		* their discriminator: a ConvNet
+		* "Architecture guidlines for stable Deep Conv GANs" (from Johnson):
+			* replace any pooling layers with strided convolutions (discriminator) and fractional-strided convolutions (generator)
+			* user batch normalisation in both the generator and discriminator
+			* remove fully-connected hidden layers for deeper architectures
+			* use ReLU activation in generator for all layers except for output (Tanh)
+			* use Leaky ReLU activation in all layers of discriminator
+		* vector math: 
+			* [smiling woman] - [neutral woman] + [neutral man] = [smiling man]
+			* [man with glasses] - [man without glasses] + [woman without glasses] = [woman with glasses]
+	* Dosovitskiy & Brox (arXiv 2016):
+		* creates convincing new ImageNet samples
+		* trained on all ImageNet classes together
+		* broadly a Variational Autoencoder fed into both (1.) a Discriminator network and (2.) a pretrained AlexNet (see slide 128 "Putting everything together" for diagram)
 
 
 ## Up Next
