@@ -36,18 +36,6 @@ Topic highlights of the session included:
 
 
 
-#### From Raphaela Sapire's Talk
-
-* content here
-
-	
-
-#### From Katya Vasilaky's Talk
-
-* content here
-
-
-
 
 ## Up Next
 
