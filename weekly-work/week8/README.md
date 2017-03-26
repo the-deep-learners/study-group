@@ -9,7 +9,7 @@ In addition, we were delighted to hear from guest speakers of our own:
 1. **[Raphaela Sapire](https://angel.co/raphaela-sapire)** on her experience as a venture capitalist at Blue Seed Capital, particularly her insight into the machine- and deep-learning start-up market (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-02-07__raphaela_sapire__billion_dollar_AI.pdf))
 2. **[Katya Vasilaky](https://kathrynthegreat.github.io/)** on her research into L2 Regularization, the popular method to avoid overfitting in a wide range of models, including the deep-learning variety (slides [here]())
 
-A summary blog post, replete with photos of the session, can be found HERE. 
+A summary blog post, replete with photos of the session, can be found [here](https://medium.com/@jjpkrohn/deep-learning-study-group-viii-unsupervised-learning-regularisation-and-venture-capital-9aba67fc931c). 
 
 
 ## Recommended Preparatory Work
