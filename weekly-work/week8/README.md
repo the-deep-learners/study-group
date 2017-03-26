@@ -2,7 +2,7 @@
 
 *Meeting date: February 7th, 2017*
 
-With this session, we wrapped up our coverage of CS231n (Stanford) lectures, which were delivered by now-familiar faces Andrej Karpathy and Justin Johnson as well as guest lecturer, Google Senior Fellow Jeff Dean. 
+With this session, we wrapped up our coverage of [CS231n](http://cs231n.github.io/) (Stanford) lectures, which were delivered by now-familiar faces Andrej Karpathy and Justin Johnson as well as guest lecturer, Google Senior Fellow Jeff Dean. 
 
 In addition, we were delighted to hear from guest speakers of our own: 
 
@@ -85,4 +85,4 @@ Topic highlights of the session included:
 
 ## Up Next
 
-1. Richard Socher's CS224d (also out of Stanford) on Deep Learning for Natural Language Processing, in early March
+1. Richard Socher's [CS224d](https://cs224d.stanford.edu/) (also out of Stanford) on Deep Learning for Natural Language Processing, in early March
