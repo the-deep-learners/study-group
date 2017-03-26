@@ -28,12 +28,12 @@ Our applications have largely involved convolutional neural networks built in Py
 
 In chronological order, we have experienced the joy of being enlightened by: 
 
-1. [Dr. Katya Vasilaky](https://kathrynthegreat.github.io/): on the mathematics of deep learning (*session II*) and on regularization (*session VIII*)
-2. [Dr. Thomas Balestri](https://www.linkedin.com/in/thomasbalestri): on countless machine-learning underpinnings (*sessions III and IV*)
+1. [Katya Vasilaky](https://kathrynthegreat.github.io/): on the mathematics of deep learning (*session II*) and on regularization (*session VIII*)
+2. [Thomas Balestri](https://www.linkedin.com/in/thomasbalestri): on countless machine-learning underpinnings (*sessions III and IV*)
 3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett): on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
 2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko): on his NumPy implementation of k-Nearest Neighbours (*session VI*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire): on the deep learning start-up investment atmosphere (*session VIII*)
-3. [Soon-to-be-Dr. Grant Beyleveld](https://grantbeyleveld.wordpress.com/): on his implementation of the U-Net Convolutional Network (*session IX*)
+3. [Grant Beyleveld](https://grantbeyleveld.wordpress.com/): on his implementation of the U-Net Convolutional Network (*session IX*)
 3. [Jessica Graves](https://sefleuria.tumblr.com/): on application of Deep Learning to the fashion industry (*session IX*)
 
 
@@ -42,4 +42,4 @@ In chronological order, we have experienced the joy of being enlightened by:
 See the [weekly work](https://github.com/the-deep-learners/study-group/tree/master/weekly-work) subdirectories for details of what we covered each session, with summary notes where they were deemed necessary. We provide updates after each of our sessions, i.e., approximately every third week. 
 
 
-*With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Dr. Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to be a deep learning expert already :)*
+*With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to be a deep learning expert already :)*
