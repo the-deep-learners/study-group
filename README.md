@@ -18,7 +18,7 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 
 1. Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
 2. Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
-3. Richard Socher's [CS224d on Deep Learning for Natural Language Processing](https://cs224d.stanford.edu/) (*sessions IX through XIV*)
+3. Richard Socher's [CS224d on Deep Learning for Natural Language Processing](https://cs224d.stanford.edu/) (*sessions IX through XIII*)
 
 
 ## Application
