@@ -1,4 +1,4 @@
-# Session VIII: Autoencoders, Generative Adversarial Networks, Regularisation, and Venture Capital
+# Session VIII: Unsupervised Learning, Regularisation, and Venture Capital
 
 *Meeting date: February 7th, 2017*
 
