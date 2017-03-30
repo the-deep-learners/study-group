@@ -57,7 +57,7 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 5. [November 10th, 2016](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week5): Deep (Conv)Nets
 6. [November 30th, 2016](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week6): Convolutional Neural Networks for Visual Recognition
 7. [January 12th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week7): Implementing Convolutional Nets
-8. [February 7th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week8): Autoencoders, Generative Adversarial Networks, Regularisation, and Venture Capital
+8. [February 7th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week8): Unsupervised Learning, Regularisation, and Venture Capital
 9. March 6th, 2017: [coming soon]
 10. March 27th, 2017: [coming soon]
 
