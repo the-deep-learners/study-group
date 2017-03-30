@@ -1,5 +1,7 @@
 # study-group
 
+***
+
 We are a diverse group of software engineering and data science professionals from industry and academia. 
 
 Inspired by the [collaborative culture of artificial neural network research](https://www.untapt.com/industry/2016/08/02/deep-learning-study-group/), we hold regular, chilled beverage-enhanced study sessions in midtown Manhattan. At these meetings, we summarise prescribed preparatory material and leverage our individual strengths in computer science, mathematics, statistics, neuroscience, and venture capital to cement our comprehension of concepts and to implement effective deep learning models. 
