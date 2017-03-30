@@ -13,7 +13,7 @@ meeting date: *08-17-2016*
 	- sigmoid
 - Standard learning algo for neural networks:  Stochastic Gradient Descent (SGD)
 
-####Perceptrons
+#### Perceptrons
 
 - developed in 1950s and 60s
 - takes N binary inputs and produces a single binary output
