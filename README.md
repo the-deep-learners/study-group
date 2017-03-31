@@ -68,5 +68,7 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 
 Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting all meetings of the Deep Learning Study Group. 
 
+***
+
 
 *With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to necessarily be a deep learning expert already :)*
