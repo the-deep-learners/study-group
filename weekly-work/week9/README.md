@@ -314,7 +314,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ##### Count-Based vs Direct Prediction
 
-
+[[https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/02_pros_and_cons_of_counting_vs_w2v.png]]
 
 
 #### From Lecture 3 (More on Word Vectors)
