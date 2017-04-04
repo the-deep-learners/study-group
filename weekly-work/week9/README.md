@@ -358,6 +358,8 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	* can take a long time to compute accuracy
 	* doesn't clarify whether subsystem is the problem or its interaction with other subsystems
 	* progress is made if replacing one subsystem with another improves accuracy
+	* e.g., named-entity recognition
+	* **extrinsic evaluations are the focus of CS224d**
 	
 ##### Visualisations of GloVe Vectors
 
@@ -372,6 +374,20 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ###### Superlatives
 
 ![superlatives](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/03_07_GloVe_visualizations_superlatives.png)
+
+##### Analogy Evaluation and Hyperparameters
+
+* improve accuracy by:
+	* increasing dimensionality of vector space up to ~300 
+	* window size of *eight* around each center word suits GloVe vectors well
+	* asymmetric context (e.g., only words to the left) underperforms symmetric context
+* more training time (i.e., iterations) improves accuracy
+* more data improves accuracy(e.g., [Common Crawl with 42B tokens] > [Wikipedia with 1.6B tokens])
+* N.B.: better results could potentially be obtained on downstream tasks with different hyperparameters
+
+##### Resolving Ambiguity
+
+* [Huang, Socher, Manning & Ng (2014)](https://open.spotify.com/track/7hndTIGqgv9od4XdhkkJoZ) makes strides toward resolving word ambiguity (i.e., having the same word in multiple locations of vector space)
 
 
 ## Up Next
