@@ -314,12 +314,66 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ##### Count-Based vs Direct Prediction
 
+* Richard Socher's table summarises the traditional (count-based) and contemporary (DL) NLP approaches with respect to:
+	* techniques
+	* key papers
+	* pros and cons
+
 ![Socher slide](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/02_pros_and_cons_of_counting_vs_w2v.png)
 
 
 #### From Lecture 3 (More on Word Vectors)
 
+##### Stochastic Gradient Descent
+
+* with a large corpus (e.g., Google 1TB corpus):
+	* you could have 40B tokens and windows
+	* you would not have enough memory for a single update with gradient descent, or you'd have to wait a very long time
+	* ergo, gradient descent is not an optimal solution for (probably) all neural nets
+	* *stochastic* gradient descent:
+		* the solution!
+		* update model parameters after each window *t*
+		
+##### GloVe
+
+* enables fast training *and* scales to huge corpora
+* nevertheless has good performance even with a small corpus and/or small vectors
+
+##### Two Sets of Vectors
+
+* we have *U* and *V* from all vectors *u* and *v*
+	* both capture similar co-occurrence information
+	* best solution is to sum them, i.e., *X_final = U + V*
+	* one of many hyperparameters explored in [Pennington, Socher, & Manning (2014)](https://nlp.stanford.edu/pubs/glove.pdf)
+	
+##### Evaluating the Quality of Word Vectors
+
+* intrinsic:
+	* evaluation on a specific/intermediate subtask
+	* fast to compute
+	* helps to understand that system
+	* not clear if really helpful unless correlation to real task is established
+* extrinsic:
+	* evaluation on a *real* task
+	* can take a long time to compute accuracy
+	* doesn't clarify whether subsystem is the problem or its interaction with other subsystems
+	* progress is made if replacing one subsystem with another improves accuracy
+	
+##### Visualisations of GloVe Vectors
+
+###### Gender
+
+![gender](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/03_05_GloVe_visualizations_gender.png)
+
+###### Corporate CEOs
+
+![CEOs](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/03_06_GloVe_visualizations_CEO.png)
+
+###### Superlatives
+
+![superlatives](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/03_07_GloVe_visualizations_superlatives.png)
+
 
 ## Up Next
 
-1. the next three lectures of the course, which employ deep-learning algorithms to learn word-vector features
+1. the next three lectures of the course, which cover the use of neural networks to learn word-vector features
