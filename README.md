@@ -41,6 +41,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 5. Karl Habermas on his NumPy implemention of the word2vec algorithm (*session X*)
 6. David Epstein on Generative Adversarial Networks (*session X*)
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mistures (*session XI*)
+8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
 
 ***
 
