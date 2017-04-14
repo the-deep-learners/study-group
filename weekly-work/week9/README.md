@@ -9,7 +9,7 @@ In addition, we enjoyed fascinating technical talks from:
 1. **[Jessica Graves](https://sefleuria.tumblr.com/)**  on AI applications in the fashion industry, and 
 2. **[Grant Beyleveld](https://grantbeyleveld.wordpress.com/)** on his implementation of the [U-Net](https://arxiv.org/abs/1505.04597) Convolutional Networks for object recognition in images (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-03-06__grant_beyleveld__u_net.pdf))
 
-A summary blog post, replete with photos of the session, can be found [here](https://medium.com/@jjpkrohn/deep-learning-study-group-viii-unsupervised-learning-regularisation-and-venture-capital-9aba67fc931c). 
+A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-learning-study-group-ix-natural-language-processing-ai-in-fashion-and-u-net-1a4726037806). 
 
 
 ## Recommended Preparatory Work
