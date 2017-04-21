@@ -10,7 +10,7 @@ In addition, we enjoyed perfectly topical, highly-interactive presentations from
 2. **Karl Habermas** (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-03-27__karl_habermas__CS224d_assignment1.pdf)) on *implementing* the word2vec algorithm (i.e., CS224d 2017 Assignment 1) 
 3. **David Epstein** with an introduction to Generative Adversarial Networks (focused on [Goodfellow NIPS 2014](https://arxiv.org/pdf/1701.00160.pdf) and [Radford et al. ICLR 2016](https://arxiv.org/pdf/1511.06434.pdf))
 
-A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-learning-study-group-ix-natural-language-processing-ai-in-fashion-and-u-net-1a4726037806). 
+A summary blog post, replete with photos of the session, can be found [here](https://medium.com/@jjpkrohn/deep-learning-study-group-10-word2vec-mania-generative-adversarial-networks-80922e962d1). 
 
 
 ## Recommended Preparatory Work
