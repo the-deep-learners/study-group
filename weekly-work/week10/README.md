@@ -15,7 +15,7 @@ A summary blog post, replete with photos of the session, can be found [here](htt
 
 ## Recommended Preparatory Work
 
-The recommended preparatory work for Session X was the lectures of four through six of CS224d (2016), each of which is 75 to 80 minutes long: 
+The recommended preparatory work for Session X was lectures four through six of CS224d (2016), each of which is 75 to 80 minutes long: 
 
 1. [Word Window Classification and Neural Networks](https://www.youtube.com/watch?v=ghYajIXvzOI)
 1. [Neural Networks and Backpropagation](https://www.youtube.com/watch?v=Tkt54rYmRdI&t=4s), and
