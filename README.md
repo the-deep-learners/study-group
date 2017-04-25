@@ -14,6 +14,8 @@ Over the course of our sessions, we follow three parallel paths:
 
 ## Theory
 
+![jk1](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/3.jpg)
+
 Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of: 
 
 1. Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
