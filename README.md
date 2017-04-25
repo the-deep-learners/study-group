@@ -48,9 +48,9 @@ In chronological order, we have experienced the joy of being enlightened by:
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mixtures (*session XI*)
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
 
+![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
+
 ***
-
-
 
 # Session Notes
 
@@ -67,8 +67,6 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 9. [March 6th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week9): Word Vectors, AI *x* Fashion, and U-Net
 10. [March 27th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week10): word2vec Mania + GANs
 11. [April 19th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week11): Recurrent Neural Networks, including GRUs and LSTMs
-
-![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
 ***
 
