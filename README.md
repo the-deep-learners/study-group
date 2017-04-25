@@ -1,11 +1,12 @@
 # study-group
 
 ![smile and wave](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/session_XI_crew.JPG)
-![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
 We are a diverse group of software engineering and data science professionals from industry and academia. 
 
 Inspired by the [collaborative culture of artificial neural network research](https://www.untapt.com/industry/2016/08/02/deep-learning-study-group/), we hold regular, chilled beverage-enhanced study sessions in midtown Manhattan. At these meetings, we summarise prescribed preparatory material and leverage our individual strengths in computer science, mathematics, statistics, neuroscience, and venture capital to cement our comprehension of concepts and to implement effective deep learning models. 
+
+![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
 Over the course of our sessions, we follow three parallel paths: 
 
