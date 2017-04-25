@@ -12,9 +12,9 @@ Over the course of our sessions, we follow three parallel paths:
 2. **Application**: We practice deep learning in the real world. We typically commence by collectively following tutorials then we move on to solving novel and illustrative data problems involving a broad range of techniques. In addition to incorporating deep learning into our respective academic and commercial applications, we commit code to the present, public repository where possible. 
 3. **Presentations**: Study group members regularly share their progress on Deep Learning projects and their area of expertise. This elicits novel discourse outside of the relatively formal paths **1** and **2**, playfully encouraging along serendipity. 
 
-## Theory
-
 ![jk1](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/3.jpg)
+
+## Theory
 
 Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of: 
 
