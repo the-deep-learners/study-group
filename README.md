@@ -1,6 +1,7 @@
 # study-group
 
 ![smile and wave](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/session_XI_crew.JPG)
+![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
 We are a diverse group of software engineering and data science professionals from industry and academia. 
 
