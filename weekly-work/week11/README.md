@@ -168,6 +168,7 @@ Topic highlights of the session included:
 			* final memory at time step *t* combines current and previous time steps
 		* **take-home message**: essentially, RNNs weight each word equally; GRUs, meanwhile, ignore unimportant words in a sequence while retaining important words in memory
 	* **Long Short-Term Memory Units (LSTMs)**
+		* introduced by [Hochreiter & Schmidhuber (1997)](http://dl.acm.org/citation.cfm?id=1246450)
 		* relative to GRUs, these units are even more complex 
 		* at each time step, LSTMs are able to modify:
 			* **input gate**: "current cell *matters*"
