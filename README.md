@@ -67,6 +67,7 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 
 ***
 
+![classic Ed](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
 
 # Acknowledgements
 
