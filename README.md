@@ -82,3 +82,5 @@ Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-lov
 *With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to necessarily be a deep learning expert already :)*
 
 ![empty_room](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5959.JPG)
+
+***
