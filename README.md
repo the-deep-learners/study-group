@@ -1,7 +1,5 @@
 # study-group
 
-***
-
 ![smile and wave](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/session_XI_crew.JPG)
 
 We are a diverse group of software engineering and data science professionals from industry and academia. 
@@ -67,11 +65,11 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 
 ***
 
-![classic Ed](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
-
 # Acknowledgements
 
 Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
+
+![classic Ed](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
 
 ***
 
