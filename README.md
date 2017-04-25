@@ -27,6 +27,7 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 
 Our applications have largely involved convolutional neural networks built in Python with [Numpy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), [TensorFlow, or Keras](https://insights.untapt.com/fundamental-deep-learning-code-in-tflearn-keras-theano-and-tensorflow-66be10a03227). 
 
+![katya](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5974.JPG)
 
 ## Presentations
 
@@ -44,6 +45,8 @@ In chronological order, we have experienced the joy of being enlightened by:
 6. David Epstein on Generative Adversarial Networks (*session X*)
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mixtures (*session XI*)
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
+
+![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
 
 ***
 
@@ -77,3 +80,5 @@ Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-lov
 
 
 *With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to necessarily be a deep learning expert already :)*
+
+![empty_room](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5959.JPG)
