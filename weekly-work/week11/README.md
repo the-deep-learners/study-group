@@ -9,7 +9,7 @@ In addition, we were treated to relevant talks by two heavy-hitters from the fie
 1. **[Claudia Perlich](https://sites.google.com/site/claudiaperlich/home)** on predictability and how it creates biases when your target is created by mixtures (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-04-19__claudia_perlich__predictability.pdf))
 2. **[Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/)** on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
 
-A summary blog post, replete with photos of the session, can be found [here](deadlink). 
+A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-learning-study-group-xi-recurrent-neural-networks-including-grus-and-lstms-22c17fa36deb). 
 
 
 ## Recommended Preparatory Work
