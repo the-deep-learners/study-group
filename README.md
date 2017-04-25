@@ -72,9 +72,9 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 
 # Acknowledgements
 
-Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
-
 ![classic Ed](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
+
+Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
 
 ***
 
