@@ -6,7 +6,7 @@ We are a diverse group of software engineering and data science professionals fr
 
 Inspired by the [collaborative culture of artificial neural network research](https://www.untapt.com/industry/2016/08/02/deep-learning-study-group/), we hold regular, chilled beverage-enhanced study sessions in midtown Manhattan. At these meetings, we summarise prescribed preparatory material and leverage our individual strengths in computer science, mathematics, statistics, neuroscience, and venture capital to cement our comprehension of concepts and to implement effective deep learning models. 
 
-![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
+![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
 
 Over the course of our sessions, we follow three parallel paths: 
 
@@ -48,8 +48,6 @@ In chronological order, we have experienced the joy of being enlightened by:
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mixtures (*session XI*)
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
 
-![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
-
 ***
 
 
@@ -69,6 +67,8 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 9. [March 6th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week9): Word Vectors, AI *x* Fashion, and U-Net
 10. [March 27th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week10): word2vec Mania + GANs
 11. [April 19th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week11): Recurrent Neural Networks, including GRUs and LSTMs
+
+![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
 ***
 
