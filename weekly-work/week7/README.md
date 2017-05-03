@@ -66,7 +66,7 @@ Topic highlights of the session included:
 	
 #### From Lecture 10
 
-* interpretable RNN neurons, as identified manually within text by Karpathy, Johnson and Li (2015):
+* interpretable RNN neurons, as identified manually within text by [Karpathy, Johnson and Li (2015)](https://arxiv.org/abs/1506.02078):
 	* quote detection 
 	* line length 
 	* if statements 
