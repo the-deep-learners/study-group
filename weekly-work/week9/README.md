@@ -11,6 +11,8 @@ In addition, we enjoyed fascinating technical talks from:
 
 A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-learning-study-group-ix-natural-language-processing-ai-in-fashion-and-u-net-1a4726037806). 
 
+N.B.: this document was updated on May 22nd, 2017 to reflect Christopher Manning's [2017 iteration](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=1) of the course.
+
 
 ## Recommended Preparatory Work
 
@@ -81,7 +83,10 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	* marketing
 	* finance/trading
 * speech recognition
-* automation of customer support
+* chatbots / dialog agents:
+	* automation of customer support
+	* controlling devices (2017)
+	* ordering goods (2017)
 
 ##### Why NLP is Challenging
 
@@ -93,7 +98,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	
 ##### "Deep Learning"
 
-* it is a subfield of *machine learning*
+* it is a subfield of *machine learning*, specifically of *representation learning* (i.e., where representations (=features) are learned by machines as opposed to created by humans)
 	* ML works well because of **human-designed** representations and input feature
 		* e.g.: the features for *named entity recognition* (locations, organisation names, etc.; Finkel, 2010)
 	* ML becomes a weight-optimisation problem to make the best final prediction
