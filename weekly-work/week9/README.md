@@ -239,6 +239,13 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 		* even if it requires multiple passes to understand meaning (**wow wow wow**)
 	* machine translation
 	* leverages ConvNet to label images
+	
+##### 2017 updates:
+
+* *n* dimensions in word vector:
+	* minimum 25
+	* typically 300
+	* 1000 for advanced cases
 
 
 #### From Lecture 2 (Word Vectors)
