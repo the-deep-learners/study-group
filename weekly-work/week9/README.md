@@ -253,9 +253,10 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ##### Discrete Representations of Meaning
 
 * traditional: 
-	* use a taxonomy like WordNet that has:
+	* use a dictionary definition (this is a "denotational" representation)
+	* use a taxonomy like [WordNet](https://wordnet.princeton.edu/) that has:
 		* hypernyms ("is-a") relationships and synonym sets
-	* problems with this discrete reprentation:
+	* problems with this discrete representation:
 		* great as a resource by misses nuances, e.g., of synonyms (these are not binary but gradual)
 		* does not include new words
 		* subjective
@@ -265,19 +266,45 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 			* speech: 20k
 			* PTB (Penn Treebank 3): 50k
 			* big vocabulary: 500k
-			* Google 1TB corpus: 13 million
-		* with one-hot, similar words are not encoded differently from unrelated ones
+			* Google 1TB web-crawl corpus: 13 million
+		* with one-hot encoding (a "localist" representation; in contrast to "distributed" representation where vector locations are continuous, "smeared"), similar words are not encoded differently from unrelated ones
 		
-##### Distributional Similarity-Based Representations
+##### Distributional Similarity-Based Representations 
 
-* "You shall know a word by the company it keeps" (JR Firth, 1957, 11)
+* "distributional" contrasts with the "denotational" representations above
+* "You shall know a word by the company it keeps" (JR Firth, 1957, 11) -- Wittgenstein proposed similar
+* "One of the most successful ideas of modern statistical NLP" (Manning)
 * there is great value in representing a word by the means of its neighbours
 
-###### Window-Based Co-Occurrence Matrix
+###### Directly learning low-dimensional word vectors (2017)
+
+* earliest paper on this idea is [Rumelhart et al., 1986](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf)
+* most influential modern paper on this is [Bengio et al., 2003](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) though it was largely ignored at the time
+* [Colllobert & Weston, 2008](http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf) revived Bengio's modern approach
+* a recent, even simpler and faster model is [Mikolov et al., 2013](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+
+###### Main Idea of Word2vec (2017)
+
+* "predict between every word and its context words"
+* two algorithms:
+	1. Skip-Grams (SG)
+		* predict context words given a target (this is position independent)
+	2. Continuous Bag of Words (CBOW)
+		* predict target word from bag-of-words context
+* two (moderately efficient) training methods
+	* hierarchical softmax
+	* negative sampling
+	
+###### Skip-gram prediction (2017)
+
+* predict (i.e., output) probability of **context words** (e.g., p(w_t-2|w_t), p(w_t+5|w_t) )in word window (of length 2*m* words) around **center word** in position *t*
+* 
+
+###### Window-Based Co-Occurrence Matrix (2016)
 
 * symmetric windows (left or right context is equivalent), with lengths of five to ten are common
 
-###### Low Dimensional Vectors
+###### Low Dimensional Vectors (2016)
 
 * store *most* of the important information in:
 	* **dense vector**: fixed, small number of dimensions
@@ -310,8 +337,11 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 				
 ##### Word2Vec
 
-* predict surrounding words in a window of length *m* of every word in corpus
+* predict surrounding words in a window of length 2*m* of every word in corpus
 * *objective function*: maximise the log-probability of any context word given the current center word
+
+![details of word2vec](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_word2vec_definition.png)
+
 * every word has *two* vectors
 * essentially "dynamic logistic regression"
 * analogies
@@ -324,7 +354,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 		* *x_shirt - x_clothing*  ~=  *x_chair - x_furniture* 
 		* *x_king - x_man*  ~=  *x_queen - x_woman* 
 
-##### Count-Based vs Direct Prediction
+##### Count-Based vs Direct Prediction (2016)
 
 * Richard Socher's table summarises the traditional (count-based) and contemporary (DL) NLP approaches with respect to:
 	* techniques
