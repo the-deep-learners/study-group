@@ -339,11 +339,15 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 * predict surrounding words in a window of length 2*m* of every word in corpus
 * *objective function*: maximise the log-probability of any context word given the current center word
-* every word has *two* vectors
+* every word has *two* vectors to make the math easier (and provides slightly better results):
+	1. as **c**enter word
+	2. as **o**utput word
 
 ![details of word2vec](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_word2vec_definition.png)
 
 ![w2v dot products](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_w2v_dot_products.png)
+
+![softmax](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_softmax.png)
 
 * essentially "dynamic logistic regression"
 * analogies
