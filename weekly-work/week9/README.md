@@ -11,7 +11,7 @@ In addition, we enjoyed fascinating technical talks from:
 
 A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-learning-study-group-ix-natural-language-processing-ai-in-fashion-and-u-net-1a4726037806). 
 
-N.B.: this document was updated on May 22nd, 2017 to reflect Christopher Manning's [2017 iteration](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=1) of the course.
+N.B.: this document was updated on May 22nd, 2017 to reflect Christopher Manning's 2017 iteration of the course.
 
 
 ## Recommended Preparatory Work
@@ -28,7 +28,7 @@ The recommended preparatory work for Session IX was the first three lectures of 
 Topic highlights of the session included: 
 
 
-#### From Lecture 1 (Course Intro, NLP, Deep NLP)
+#### From Lecture 1 (Course Intro, NLP, Deep NLP; 2017 lecture [here](https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=1))
 
 ##### Recommended prerequisites
 
@@ -248,7 +248,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	* 1000 for advanced cases
 
 
-#### From Lecture 2 (Word Vectors)
+#### From Lecture 2 (Word Vectors; 2017 lecture [here](https://www.youtube.com/watch?v=ERibwqs9p38&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=2))
 
 ##### Discrete Representations of Meaning
 
@@ -298,7 +298,35 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ###### Skip-gram prediction (2017)
 
 * predict (i.e., output) probability of **context words** (e.g., p(w_t-2|w_t), p(w_t+5|w_t) )in word window (of length 2*m* words) around **center word** in position *t*
-* 
+
+##### Word2Vec (2016 initially, but significantly updated for 2017)
+
+* let's look at it with Skip-Gram algorithm and (inefficient) **naive softmax** training
+* predict surrounding words in a window of length 2*m* of every word in corpus
+* *objective function*: maximise the log-probability of any context word given the current center word
+* every word has *two* vectors to make the math easier (and provides slightly better results):
+	1. as **c**enter word
+	2. as **o**utput word
+
+![details of word2vec](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_word2vec_definition.png)
+
+![w2v dot products](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_w2v_dot_products.png)
+
+![softmax](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_softmax.png)
+
+![skipgram](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_skipgram_diagram.png)
+
+* one could "cheat" at getting a high similarity score by making the vectors arbitrarily long (cosine distance can't be gamed this way)
+* essentially "dynamic logistic regression"
+* analogies
+	* linear relationships between vectors efficiently encode dimensions of similarity
+	* analogies testing dimensions of similarity can be solved quite well by doing vector subtraction in the embedding space 
+	* e.g.:
+		* syntactically:
+			* *x_apple - x_apples*  ~=  *x_car - x_cars*  ~=  *x_family - x_families*
+		* semantically (i.e., for verb and adjective morphological forms; [SemEval-2012 Task 2](https://sites.google.com/site/semeval2012task2/)):
+		* *x_shirt - x_clothing*  ~=  *x_chair - x_furniture* 
+		* *x_king - x_man*  ~=  *x_queen - x_woman* 
 
 ###### Window-Based Co-Occurrence Matrix (2016)
 
@@ -334,31 +362,6 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 				* recent
 				* simpler
 				* faster
-				
-##### Word2Vec
-
-* predict surrounding words in a window of length 2*m* of every word in corpus
-* *objective function*: maximise the log-probability of any context word given the current center word
-* every word has *two* vectors to make the math easier (and provides slightly better results):
-	1. as **c**enter word
-	2. as **o**utput word
-
-![details of word2vec](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_word2vec_definition.png)
-
-![w2v dot products](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_w2v_dot_products.png)
-
-![softmax](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_softmax.png)
-
-* essentially "dynamic logistic regression"
-* analogies
-	* linear relationships between vectors efficiently encode dimensions of similarity
-	* analogies testing dimensions of similarity can be solved quite well by doing vector subtraction in the embedding space 
-	* e.g.:
-		* syntactically:
-			* *x_apple - x_apples*  ~=  *x_car - x_cars*  ~=  *x_family - x_families*
-		* semantically (i.e., for verb and adjective morphological forms; [SemEval-2012 Task 2](https://sites.google.com/site/semeval2012task2/)):
-		* *x_shirt - x_clothing*  ~=  *x_chair - x_furniture* 
-		* *x_king - x_man*  ~=  *x_queen - x_woman* 
 
 ##### Count-Based vs Direct Prediction (2016)
 
@@ -370,9 +373,9 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ![Socher slide](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/02_pros_and_cons_of_counting_vs_w2v.png)
 
 
-#### From Lecture 3 (More on Word Vectors)
+#### From Lecture 3 ("More on Word Vectors" in 2016; [GloVe in 2017](https://www.youtube.com/watch?v=ASn7ExxLZws&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=3))
 
-##### Stochastic Gradient Descent
+##### Gradient Descent
 
 * with a large corpus (e.g., Google 1TB corpus):
 	* you could have 40B tokens and windows
