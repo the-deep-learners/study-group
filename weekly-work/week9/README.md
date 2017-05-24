@@ -411,14 +411,17 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	* fast to compute
 	* helps to understand that system
 	* not clear if really helpful unless correlation to real task is established
-	* e.g., word-vector analogies, e.g., man:woman :: king:queen
+	* e.g.: 
+		* word-vector analogies, e.g., man:woman :: king:queen
+			* can evaluate systematically with the Word Vector Analogies list from Google (N.B.: I was unable to find this immediately and Richard's link didn't work)
+		* word similarity scores from [here](http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/)
 * extrinsic:
 	* evaluation on a *real* task
 	* can take a long time to compute accuracy
 	* doesn't clarify whether subsystem is the problem or its interaction with other subsystems
 	* progress is made if replacing one subsystem with another improves accuracy
 	* e.g., named-entity recognition
-	* **extrinsic evaluations are the focus of CS224d**
+	* **extrinsic evaluations are the focus of CS224d/N**
 	
 ##### Visualisations of GloVe Vectors
 
@@ -440,13 +443,18 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ##### Analogy Evaluation and Hyperparameters
 
-* improve accuracy by:
+* in Richard's example, improve accuracy by (one should evaluate this for your own data set and model):
 	* increasing dimensionality of vector space up to ~300 
 	* window size of *eight* around each center word suits GloVe vectors well
 	* asymmetric context (e.g., only words to the left) underperforms symmetric context
 * more training time (i.e., iterations) improves accuracy
 * more data improves accuracy(e.g., [Common Crawl with 42B tokens] > [Wikipedia with 1.6B tokens])
 * N.B.: better results could potentially be obtained on downstream tasks with different hyperparameters
+
+##### What is the major benefit of deep-learned word vectors for simple single word classification? 
+
+* ability to also classify words and phrases accurately
+* that said, for some advanced models encountered later in the course, like sentiment analysis, re-training the word vector space from scratch can yield much better results 
 
 ##### Resolving Ambiguity
 
