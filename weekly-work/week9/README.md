@@ -290,7 +290,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	1. Skip-Grams (SG)
 		* predict context words given a target (this is position independent)
 	2. Continuous Bag of Words (CBOW)
-		* predict target word from bag-of-words context
+		* predict target word from bag-of-words context, i.e., the average (vector space coordinates?) of all context words together
 * contains two (moderately efficient) training methods
 	* hierarchical softmax
 	* negative sampling
@@ -318,6 +318,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ![skipgram](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_skipgram_diagram.png)
 
+* when considered with semantics (as opposed to syntax), ignoring word order improves results
 * one could "cheat" at getting a high similarity score by making the vectors arbitrarily long (cosine distance can't be gamed this way)
 * essentially "dynamic logistic regression"
 * analogies
@@ -333,6 +334,8 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ###### Window-Based Co-Occurrence Matrix (2016)
 
 * symmetric windows (left or right context is equivalent), with lengths of five to ten are common
+* in 2017, Lecture 3:
+	* Richard indicates that this achieves a similar outcome to word2vec but we are computing the co-occurrence matrix *directly* instead of by minimising the w2v cost function
 
 ###### Low Dimensional Vectors (2016)
 
@@ -389,16 +392,17 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 		
 ##### GloVe
 
-* Global Vectors for Word Representation
-* enables fast training *and* scales to huge corpora
-* nevertheless has good performance even with a small corpus and/or small vectors
+* Global Vectors for Word Representation ([Pennington, Socher, & Manning (2014)](https://nlp.stanford.edu/pubs/glove.pdf))
+* the "best of both worlds" (Richard), i.e., count-based and direct prediction approaches
+	* enables fast training *and* scales to huge corpora
+	* nevertheless has good performance even with a small corpus and/or small vectors (because of efficient use of statistics)
 
 ##### Two Sets of Vectors
 
 * we have *U* and *V* from all vectors *u* and *v*
 	* both capture similar co-occurrence information
 	* best solution is to sum them, i.e., *X_final = U + V*
-	* one of many hyperparameters explored in [Pennington, Socher, & Manning (2014)](https://nlp.stanford.edu/pubs/glove.pdf)
+	* one of many hyperparameters explored in Pennington et al.
 	
 ##### Evaluating the Quality of Word Vectors
 
@@ -407,6 +411,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 	* fast to compute
 	* helps to understand that system
 	* not clear if really helpful unless correlation to real task is established
+	* e.g., word-vector analogies, e.g., man:woman :: king:queen
 * extrinsic:
 	* evaluation on a *real* task
 	* can take a long time to compute accuracy
@@ -428,6 +433,10 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ###### Superlatives
 
 ![superlatives](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/03_07_GloVe_visualizations_superlatives.png)
+
+###### Fun Expressions from 2017
+
+![fun expressions](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/fun_glove_expressions.png)
 
 ##### Analogy Evaluation and Hyperparameters
 
