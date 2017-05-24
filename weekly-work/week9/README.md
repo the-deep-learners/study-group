@@ -307,6 +307,8 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 * every word has *two* vectors to make the math easier (and provides slightly better results):
 	1. as **c**enter word
 	2. as **o**utput word
+	
+![w2v cost fxn](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/w2v_objective_fxn.png)
 
 ![details of word2vec](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_word2vec_definition.png)
 
