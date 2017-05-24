@@ -312,7 +312,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ![w2v dot products](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_w2v_dot_products.png)
 
-![softmax](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_softmax.png)
+![softmax illustrated](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_softmax.png)
 
 ![skipgram](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/2017_02_skipgram_diagram.png)
 
