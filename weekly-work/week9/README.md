@@ -286,14 +286,15 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ###### Main Idea of Word2vec (2017)
 
 * "predict between every word and its context words"
-* two algorithms:
+* contains two algorithms:
 	1. Skip-Grams (SG)
 		* predict context words given a target (this is position independent)
 	2. Continuous Bag of Words (CBOW)
 		* predict target word from bag-of-words context
-* two (moderately efficient) training methods
+* contains two (moderately efficient) training methods
 	* hierarchical softmax
 	* negative sampling
+* Christopher covers the Skip-Gram algorithm and (inefficient) **naive softmax** training
 	
 ###### Skip-gram prediction (2017)
 
@@ -301,7 +302,6 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ##### Word2Vec (2016 initially, but significantly updated for 2017)
 
-* let's look at it with Skip-Gram algorithm and (inefficient) **naive softmax** training
 * predict surrounding words in a window of length 2*m* of every word in corpus
 * *objective function*: maximise the log-probability of any context word given the current center word
 * every word has *two* vectors to make the math easier (and provides slightly better results):
@@ -373,9 +373,9 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 ![Socher slide](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week9/02_pros_and_cons_of_counting_vs_w2v.png)
 
 
-#### From Lecture 3 ("More on Word Vectors" in 2016; [GloVe in 2017](https://www.youtube.com/watch?v=ASn7ExxLZws&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=3))
+#### From Lecture 3 ("More on Word Vectors" in 2016; ["GloVe" in 2017](https://www.youtube.com/watch?v=ASn7ExxLZws&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6&index=3))
 
-##### Gradient Descent
+##### Gradient Descent (2016; the same slide was the final slide in of lecture 2 in 2017)
 
 * with a large corpus (e.g., Google 1TB corpus):
 	* you could have 40B tokens and windows
@@ -387,6 +387,7 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 		
 ##### GloVe
 
+* Global Vectors for Word Representation
 * enables fast training *and* scales to huge corpora
 * nevertheless has good performance even with a small corpus and/or small vectors
 
