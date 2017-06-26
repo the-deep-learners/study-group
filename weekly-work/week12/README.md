@@ -123,12 +123,156 @@ This is approach would be intractable in practice. So instead:
 
 #### From Lecture 11 (Gated Recurrent Units and Further Topics in NMT)
 
-##### SECTION TITLE
+##### How Gated Units Fix Things -- Backpropagation through time
 
-* bullet
- 
+* RNNs quantify importance of something at n_t-x on n_t
+	* is the gradient vanishing because n_t-x is unimportant or simply because of vanishing gradient? 
+		* "like landing aircraft on an aircraft carrier" -- small window to get hyperparameters just right in
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/RNN_visualisation.png)
 
 
+###### Gated Recurrent Units
+
+* overcome the above issue by "shortcutting" connections -- circumnavigating all of the intermediate backprop 
+* key literature: 
+	* Cho et al., EMNLP 2014
+	* Chung, Gulcehre, Cho, Bengio, DLUFL 2014
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_shortcut.png)
+
+* **candidate update** equivalent to RNN update
+* **update gate** adaptively allows information from far past timesteps to directly interact with the current timestep
+* **reset gate** enables parts of the hidden state to be forgotten, otherwise some past information would be around forever
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_gates.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_visualisation.png)
+
+* the reset gate decides what portion is "readable"
+
+###### Long Short-Term Memory (Units)
+
+* a specialised type of GRU; widely-used
+* more complex than vanilla GRU above as LSTMs as they:
+	1. have an additional gate
+	2. has "extra *h_t*" output gate: makes "cell" "less exposed" 
+* enable memory of previous states to reach back 100 as opposed to 10 with gate-free RNN
+* key literature:
+	* Hochreiter & Schmidhuber, NC 1999
+	* Gers (thesis) 2001
+* "cell" (*c*) of LSTM behaves like "hidden state" (*h*) of Cho's GRU
+	* *h* in LSTM is different, exposed
+* LSTM can both keep all information from the past as well as from the current step
+	* Cho's GRUs, on the other hand, have a trade-off between past and present
+* LSTM's candidate update and GRU's candidate update are analogous
+* the LSTM's "forget gate" is usually written as a "don't forget gate"
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/LSTM_secret.png)
+
+* the first timestep is 127 and we count back to zero here:
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/lstm_vs_rnn_127.png)
+
+* at ~100 timesteps, LSTMs tap out too: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/lstm_vs_rnn_32.png)
+
+
+##### Steps for Training a (gated) RNN
+
+From the following key literature:
+
+* Saxe et al., ICLR 2014
+* Ba, Kingma, ICLR 2015
+* Zeiler, arXiv 2012
+* Pascanu et al., ICML 2013
+
+...come the following steps:
+
+1. use an LSTM or a GRU 
+	* makes life "so much simpler"
+2. initialise recurrent matrices to be orthogonal
+3. initialise other matrices with a sensible ("small!") scale
+4. initialise forget gate bias near one or two
+	* i.e., default to "don't forget" / "remember"
+	* typically we set things near zero; it's a mistake here because we want to bias toward remembering from the past timesteps
+5. use adaptive learning-rate algorithms
+	* Adam
+	* Adadelta
+6. clip the norm of the gradient 
+	* 1-5 "seem to be a reasonable threshold when used together with Adam or Adadelta"
+7. either only dropout vertically (this is trivial)
+	* if you want to do it horizontally, learn how to do it "right" (e.g., Bayesian dropout) as it's tricky
+8. "Be patient!"
+	* the network may simply need to train longer
+	* GPU is essential for any decent-sized data set
+	
+
+##### Ensembles
+
+* train 8-10 nets
+* average their predictions
+* get an extra 2%
+* some approaches:
+	1. majority voting scheme (OR) 
+	2. consensus building scheme (AND)
+* key paper: Jung, Cho & Bengio, ACL 2016
+
+
+##### Machine Translation Evaluation
+
+* manual
+	* may be best quality
+	* correct vs incorrect
+	* adequacy and fluency (e.g., on 5- or 7-point Likert scales)
+	* error categorisation (highly subjective)
+	* comparative ranking of translations
+	* slow
+	* expensive
+* testing within an application that uses MT as one sub-component
+	* e.g., question-answering from foreign language documents
+		* may not test many aspects of the transation
+* automatic metric
+	* ideally fast, cheap to apply
+	* WER
+		* word error rate
+		* problematic because
+	* BLEU
+		* developed at IBM (Papineni et al., ACL 2002)
+		* n-gram precision
+		* penalty for brevity
+		* "gaming"
+			* was thought to be difficult to "game" the metric (i.e., if BLUE goes up, quality does too)
+			* should be run with multiple reference translations (recently, many people use one)
+			* initial results correlated very well human judgments (e.g., adequacy, fluency)
+			* today, there is a perversion: 
+				* MT BLEU scores are as high as human translation BLEU scores (e.g., in Google Translate announcements)
+				* however, human translations are of much higher quality 
+
+##### The Word Generation Problem: Dealing with a Large Output Vocab
+
+* because languages have so many words
+	* the number of softmax parameters is very large
+		* e.g., there's a google MT example where half of the computational power is for the softmax layer
+* if vocabs are modest (e.g., 50k-word vocab), the target language loses its elegance
+* first idea: scale the softmax
+	* e.g.:
+		* "Hierarchical models": tree-structured vocabulary (Bengio group, 2005, 2009)
+		* "Noise-contrastive estimation": binary classification
+	* neither of the above approaches are GPU-friendly
+	* better: Large-Vocab NMT
+		* GPU-friendly
+		* fast for training and testing
+		* training: 
+			* each time train on a smaller subset of the vocab
+			* segment the data into categories (e.g., sports, business, etc.)
+			* this enables 500k vocab to be covered in ~50k chunks
+		* testing:
+			* select candidate words
+* second idea: scaling the softmax is insufficient
+	* new names, new numbers, etc. show up at test time (i.e., in any new piece of text)
+	* to be covered in the next lecture! 
 
 
 #### From Lecture 12 (End-to-End Models for Speech Processing)
