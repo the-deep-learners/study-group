@@ -277,10 +277,113 @@ From the following key literature:
 
 #### From Lecture 12 (End-to-End Models for Speech Processing)
 
-##### SECTION TITLE
+* guest lecturer: Navdeep Jaitly
+	* from U Toronto Hinton Lab
+	* most of work discussed in his lecture done while on Google Brain team
+	* Socher says: "name is on all of the exciting speech papers in the past few years"
+	* now at NVIDIA
 
-* bullet
+##### Automatic Speech Recognition (ASR)
 
+* converts speech to text
+* a natural interface for human communication
+	* hands-free
+	* no need to learn any new skills to use it
+* applications are endless
+	* controlling devices
+		* cars
+		* homes
+		* handhelds
+	* interacting with intelligent devices
+		* chatbots
+		* call-centre help desks
+		* our machine overlords
+		
+##### Traditional Speech Recognition
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/traditional_ASR.png)
+
+##### Neural Network Approach to Speech Recognition
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/nn_ASR.png)
+
+* each component is trained independently, with different objective functions
+* errors in one component may not behave well with errors in another component
+* end-to-end models would be better, e.g.:
+	* Connectionist Temporal Classification (CTC)
+		* used in production systems at Baidu and Google
+		* requires a lot of training
+	* Sequence to Sequence
+		* trend is in the direction of this approach
+		* e.g., "Listen Attend and Spell", which is the focus of Navdeep's lecture
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/end_to_end_ASR_as_model.png)
+
+* works with raw audio
+* performs better with minimal preprocessing, i.e., log spectrogram
+	* emulates human tendency to hear well in narrow middle range only 
+	* humans require logarithmic differences above or below that range
+
+##### Connectionist Temporal Classification
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/CTC_peaks.png)
+
+* produces correct sounds but lacks correct spelling and grammar
+	* by using language model to rescore or during training (e.g., with "OK, Google"), this can be fixed
+* "no big data" (or "big enough") available in this domain
+	* even google trains on fairly small data set (81 hours -- Wall Street Journal data)
+
+##### Listen Attend and Spell
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/seq2seq_ASR.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/seq2seq_ASR_attn.png)
+
+* for attention: 
+	* calculate similarity scores between the decoder "query" and encoder "state" timesteps
+	* normalise with softmax to create attention vector
+	* linear blend encoder states using attention vector
+* hierarchical encoder (Chan, Jaitly et al., ICCSP 2015)
+	* breaks up timesteps that need to be backpropagated through
+* multimodal outputs
+	* same input has multiple outputs with various high-probability guesses
+* retains "causality"
+* limitations
+	* not an online model (all input must be received before transcripts can be produced)
+	* attention is a computational bottleneck (every output token pays attention to every input timestep)
+	* word error rate goes up at very short lengths
+
+##### Online Seq2Seq
+
+###### Neural Transducer
+
+* seq2seq models on local chunks of data
+* outputs are produced as inputs are received
+* maintains causality
+* inference is done by using beam search to find highest probability output sequence for an input
+* beam search fails easily at input-to-output alignment
+	* "Approximate Dynamic Programming" fares better
+
+###### Very Deep Convolutional Encoders
+
+* "Very Deep Convolutional Encoders" (Pyramidal RNNs) reduce the time resolution of inputs
+	* like image patches, acoustic signals occur within local windows that are well-suited to convolutiona
+
+##### Choosing Output Targets
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/choosing_output_targets.png)
+
+* even better:
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/choosing_better_targets.png)
+
+* a problem with this approach is that during sequence generation (decoding), shorter, less accurate senteneces have the lowest cost, e.g., "" may have the lowest cost of all
+	* the solution is to add a "coverage reward", which rewards model for generating longer sentences by lowering cost for this
+
+##### ASR with Simultaneous Translation
+
+* is possible
+* attention corresponds to same sections of sentence as with those methods discussed in lecture 10 (i.e., MT alone -- no ASR)
 
 
 
