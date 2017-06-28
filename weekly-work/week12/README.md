@@ -2,11 +2,13 @@
 
 *Meeting date: June XX, 2017*
 
-For our fourth consecutive session, we continued to delve into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). 
+For our fourth consecutive session, we delved further into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). 
 
 A summary blog post, replete with photos of the session, can be found [here](ADD LINK). 
 
 
+
+---
 ## Recommended Preparatory Work
 
 Because of the extended gap between sessions to create space for recording [Deep Learning with TensorFlow LiveLessons](https://github.com/the-deep-learners/TensorFlow-LiveLessons) for the O'Reilly Safari, the recommended preparatory work for Session XII was double the usual, i.e., lectures ten through fifteen: 
@@ -18,15 +20,17 @@ Because of the extended gap between sessions to create space for recording [Deep
 3. [Tree Recursive Neural Networks and Constituency Parsing](https://www.youtube.com/watch?v=RfwgqPkWZ1w&index=15&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 4. [Coreference Resolution](https://www.youtube.com/watch?v=rpwEWLaueRk&index=16&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 
+
+---
 ## Summary
 
 
 Topic highlights of the session included: 
 
 
-#### From Lecture 10 (Neural Machine Translation and Models with Attention)
+### Lecture 10: Neural Machine Translation and Models with Attention
 
-##### NMT: Neural Machine Translation
+#### NMT: Neural Machine Translation
 
 * NMT is the approach of modelling the *entire* MT process via *one* big ANN
 	* in practice, there are often practical comprises on this objective
@@ -49,7 +53,7 @@ Topic highlights of the session included:
 	2. 2016-08: Systran launches purely NMT model
 	3. 2016-09: Google launches NMT (with overblown hype claiming to equal human translation quality)
 	
-##### Attention
+#### Attention
 
 * the problem: vanilla NMT works well on short sentences, but not long ones
 * its effect: it aligns equivalent sections of text in two different languages
@@ -85,11 +89,11 @@ Topic highlights of the session included:
 
 * NMTs, particularly those without attention, create elegant sentences, but tend to insert words unrelated to the translation that are semantically sensible
 
-###### Doubly attention
+##### Doubly attention
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/doubly_attention.png)
 
-###### Sequence Model Decoders
+##### Sequence Model Decoders
 
 1. simple and exact decoding algorithm
 2. score each and every possible translation
@@ -121,9 +125,12 @@ This is approach would be intractable in practice. So instead:
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/decoding.png)
 
 
-#### From Lecture 11 (Gated Recurrent Units and Further Topics in NMT)
 
-##### How Gated Units Fix Things -- Backpropagation through time
+
+---
+### Lecture 11 :Gated Recurrent Units and Further Topics in NMT
+
+#### How Gated Units Fix Things -- Backpropagation through time
 
 * RNNs quantify importance of something at n_t-x on n_t
 	* is the gradient vanishing because n_t-x is unimportant or simply because of vanishing gradient? 
@@ -132,7 +139,7 @@ This is approach would be intractable in practice. So instead:
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/RNN_visualisation.png)
 
 
-###### Gated Recurrent Units
+##### Gated Recurrent Units
 
 * overcome the above issue by "shortcutting" connections -- circumnavigating all of the intermediate backprop 
 * key literature: 
@@ -151,7 +158,7 @@ This is approach would be intractable in practice. So instead:
 
 * the reset gate decides what portion is "readable"
 
-###### Long Short-Term Memory (Units)
+##### Long Short-Term Memory (Units)
 
 * a specialised type of GRU; widely-used
 * more complex than vanilla GRU above as LSTMs as they:
@@ -179,7 +186,7 @@ This is approach would be intractable in practice. So instead:
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/lstm_vs_rnn_32.png)
 
 
-##### Steps for Training a (gated) RNN
+#### Steps for Training a (gated) RNN
 
 From the following key literature:
 
@@ -209,7 +216,7 @@ From the following key literature:
 	* GPU is essential for any decent-sized data set
 	
 
-##### Ensembles
+#### Ensembles
 
 * train 8-10 nets
 * average their predictions
@@ -220,7 +227,7 @@ From the following key literature:
 * key paper: Jung, Cho & Bengio, ACL 2016
 
 
-##### Machine Translation Evaluation
+#### Machine Translation Evaluation
 
 * manual
 	* may be best quality
@@ -250,7 +257,7 @@ From the following key literature:
 				* MT BLEU scores are as high as human translation BLEU scores (e.g., in Google Translate announcements)
 				* however, human translations are of much higher quality 
 
-##### The Word Generation Problem: Dealing with a Large Output Vocab
+#### The Word Generation Problem: Dealing with a Large Output Vocab
 
 * because languages have so many words
 	* the number of softmax parameters is very large
@@ -275,7 +282,9 @@ From the following key literature:
 	* to be covered in the next lecture! 
 
 
-#### From Lecture 12 (End-to-End Models for Speech Processing)
+---
+
+### Lecture 12: End-to-End Models for Speech Processing
 
 * guest lecturer: Navdeep Jaitly
 	* from U Toronto Hinton Lab
@@ -283,7 +292,7 @@ From the following key literature:
 	* Socher says: "name is on all of the exciting speech papers in the past few years"
 	* now at NVIDIA
 
-##### Automatic Speech Recognition (ASR)
+#### Automatic Speech Recognition (ASR)
 
 * converts speech to text
 * a natural interface for human communication
@@ -299,11 +308,11 @@ From the following key literature:
 		* call-centre help desks
 		* our machine overlords
 		
-##### Traditional Speech Recognition
+#### Traditional Speech Recognition
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/traditional_ASR.png)
 
-##### Neural Network Approach to Speech Recognition
+#### Neural Network Approach to Speech Recognition
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/nn_ASR.png)
 
@@ -324,7 +333,7 @@ From the following key literature:
 	* emulates human tendency to hear well in narrow middle range only 
 	* humans require logarithmic differences above or below that range
 
-##### Connectionist Temporal Classification
+#### Connectionist Temporal Classification
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/CTC_peaks.png)
 
@@ -333,7 +342,7 @@ From the following key literature:
 * "no big data" (or "big enough") available in this domain
 	* even google trains on fairly small data set (81 hours -- Wall Street Journal data)
 
-##### Listen Attend and Spell
+#### Listen Attend and Spell
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/seq2seq_ASR.png)
 
@@ -353,9 +362,9 @@ From the following key literature:
 	* attention is a computational bottleneck (every output token pays attention to every input timestep)
 	* word error rate goes up at very short lengths
 
-##### Online Seq2Seq
+#### Online Seq2Seq
 
-###### Neural Transducer
+##### Neural Transducer
 
 * seq2seq models on local chunks of data
 * outputs are produced as inputs are received
@@ -364,12 +373,12 @@ From the following key literature:
 * beam search fails easily at input-to-output alignment
 	* "Approximate Dynamic Programming" fares better
 
-###### Very Deep Convolutional Encoders
+##### Very Deep Convolutional Encoders
 
 * "Very Deep Convolutional Encoders" (Pyramidal RNNs) reduce the time resolution of inputs
 	* like image patches, acoustic signals occur within local windows that are well-suited to convolutiona
 
-##### Choosing Output Targets
+#### Choosing Output Targets
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/choosing_output_targets.png)
 
@@ -380,7 +389,7 @@ From the following key literature:
 * a problem with this approach is that during sequence generation (decoding), shorter, less accurate senteneces have the lowest cost, e.g., "" may have the lowest cost of all
 	* the solution is to add a "coverage reward", which rewards model for generating longer sentences by lowering cost for this
 
-##### ASR with Simultaneous Translation
+#### ASR with Simultaneous Translation
 
 * is possible
 * attention corresponds to same sections of sentence as with those methods discussed in lecture 10 (i.e., MT alone -- no ASR)
@@ -388,19 +397,11 @@ From the following key literature:
 
 
 
-#### From Lecture 13 (Convolutional Neural Networks)
+---
 
-##### SECTION TITLE
+### Lecture 13: Convolutional Neural Networks
 
-* bullet
-
-
-
-
-
-#### From Lecture 14 (Tree Recursive Neural Networks and Constituency Parsing)
-
-##### SECTION TITLE
+#### SECTION TITLE
 
 * bullet
 
@@ -408,17 +409,30 @@ From the following key literature:
 
 
 
-#### From Lecture 15 (Coreference Resolution)
+---
+### Lecture 14: Tree Recursive Neural Networks and Constituency Parsing
 
-##### SECTION TITLE
+#### SECTION TITLE
 
 * bullet
 
 
 
 
+---
 
-# Up Next
+### Lecture 15: Coreference Resolution
+
+#### SECTION TITLE
+
+* bullet
+
+
+
+
+---
+
+## Up Next
 
 For our next session, the recommended preparatory work is: 
 
