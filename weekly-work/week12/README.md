@@ -401,12 +401,115 @@ From the following key literature:
 
 ### Lecture 13: Convolutional Neural Networks
 
-#### SECTION TITLE
+#### From RNNs to CNNs
 
-* bullet
+* RNNs are "awesome" but have some issues:
+	* can't capture phrases without prefix context that feeds into later words (for classification, you may only be interested in later words but they're inextricable from earlier parts of phrase)
+	* relatedly, RNNs often capture too much of last words in final vector (softmax is often only at the last step)
+* CNNs
+	* resolve some of these issues
+	* main idea: what if we compute vectors for every possible (sub-)phrase within a phrase of words
+		* regardless of whether sub-phrase is grammatical
+		* often sub-phrase is not linguistically or cognitively plausible
+		* afterward, group the sub-phrases
 
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/what_is_a_convolution.png)
 
+* the equivalent to a pixel in NLP is a word vector
 
+#### Single-Layer CNN
+
+* simple variant using one convolutional layer and pooling
+* key literature:
+	* Collobert and Weston (2011)
+	* Kim (2014) "CNNs for Sentence Classification"
+* filter of size *k*=2 convolves over bigrams, *k*=3 trigrams
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/single_layer_CNN.png)
+
+* add zero-padding to both the end of the sentence and (not shown in next slide!) the beginning of the sentence
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/CNN_feature_map.png)
+
+* pooling layer
+	* "max-over-time" pooling layer (= max-pooling layer)
+	* captures the most important activations (i.e., the maximum over time)
+	* in theory would work:
+		* min-pooling *but not if you use ReLU units!*
+		* average-pooling: there's literature on this, but this may wash strongest effects out
+* multiple filters
+	* ideally with different lengths
+	* capture significant unigrams, bigrams, trigrams, 4-grams, etc.
+* multi-channel idea
+	* overcomes the "television" / "telly" problem covered in an earlier lecture
+	* initialise with pre-trained word vectors (w2v or GloVe)
+	* start with two copies 
+	* backprop into only one set, keep other "static"
+	* both channels are added to *c_i* before max-pooling
+* top-level steps:
+	1. one convolution
+	2. one max-pooling
+	3. simple final softmax layer
+* use dropout
+	* Kim (2014) had 2-4% improved accuracy and ability to use very large networks without overfitting
+* hyperparamaeter tuning:
+	* Richard follows Bengio's suggestion to set a range for each hyperparameter and sample randomly over the hyperparameter space, cross-validating on each separately
+	* ideally running ~5 models at each best location and ensembling them
+* model comparisons to historically significant models are often flawed, straw men
+	* author isn't incentivised to spend time optimising existing leading approaches or incorporating state-of-the-art techniques (e.g., supplementing a pre-2014 model with the Dropout technique devised since)
+
+#### CNN Alternatives
+
+* narrow vs wide convolutions
+* complex pooling schemeds (over sequences)
+* deeper convolutional layers
+* key literature: Kalchbrenner et al. (2014)
+* Richard: "at some point, there is no more intuition on why" we should make one decision or another
+* Kalchbrenner and Blunsom (2013):
+	* one of the first successful machine translation efforts
+	* CNN for encoding
+	* RNN for decoding
+
+#### Models for Comparison of NLP Performance
+
+* **bag of vectors**
+	* "surprisingly good baseline for simple classification problems"
+	* ...especially if followed by a few ReLU layers
+* **window model**
+	* good for single-word classification for problems that don't need wide context
+* **CNNs**
+	* good for classification
+	* can't incorporate phrase-level annotation (can only take a single label)
+	* need zero padding for shorter phrases
+	* hard to interpret
+	* easy to parallelise on GPUs
+* **RNNs**
+	* cognitively plausible (i.e., reading from left to right)
+	* not best for classification
+	* slower than CNNs
+	* can do sequence tagging and classification
+	* very active research
+
+#### Character-Level Encoding
+
+* improves classification models by a few percent
+* has fewer parameters (a couple dozen characters versus tens of thousands of word vectors)
+* input sequences are much longer (because there are 5-10 characters per word)
+	* net effect is that models tend to be much longer to train
+
+#### Training with Development Data
+
+* given training data split three ways:
+	1. training
+	2. dev(elopment)
+	3. test
+* we could, in theory:
+	* repeatedly train with training data, validate with dev set, to select optimal hyperparamters
+	* with optimal hyperparameters, combine training and dev set to more accurately identify global minimum
+* in practice:
+	* this approach works well with convex problems
+	* Deep Learning models are rarely clear convex problems with a clear global minimum
+	
 
 
 ---
