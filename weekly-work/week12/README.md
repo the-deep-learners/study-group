@@ -65,33 +65,33 @@ Topic highlights of the session included:
 		* if translating English (source) to French (target):
 * compare target and source states (from source-state pool) to generate a score, passing through softmax for relative probability...
 	
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/scoring_attention.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/scoring_attention.png)
 
 * ...then build context vector, weighting words by attention scores, to predict next word (hidden state) in French sentence
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/attn_hidden_state.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/attn_hidden_state.png)
 
 * to calculate score, compare similarity of target and source states
 	* Christopher's approach is the **bilinear form** introduced in EMNLP paper with first author Luong:
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/bilinear_form.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/bilinear_form.png)
 
 * focusing on (i.e., backprop-ing through) all source states (i.e., a global approach) is likely to be computationally "unpleasant" for long sequences
 * instead, is more efficient (though not higher-performing) to use a subset of all states (i.e., local)
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/global_vs_local.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/global_vs_local.png)
 
 * an LSTM without attention can remember up to about 30 words in Christopher's example before it drops off
 * attention models required for performance beyond that
 * they also perform better than the LSTM with shorter sentences
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/attention_for_long_sentences_plot.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/attention_for_long_sentences_plot.png)
 
 * NMTs, particularly those without attention, create elegant sentences, but tend to insert words unrelated to the translation that are semantically sensible
 
 ##### Doubly attention
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/doubly_attention.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/doubly_attention.png)
 
 ##### Sequence Model Decoders
 
@@ -122,7 +122,7 @@ This is approach would be intractable in practice. So instead:
 	* small beam works well (*K* = 5 or 10); see plot below (higher BLEU score is better)
 	* larger beams are more expensive and don't improve BLEU much
 	
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/decoding.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/decoding.png)
 
 
 
@@ -136,7 +136,7 @@ This is approach would be intractable in practice. So instead:
 	* is the gradient vanishing because n_t-x is unimportant or simply because of vanishing gradient? 
 		* "like landing aircraft on an aircraft carrier" -- small window to get hyperparameters just right in
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/RNN_visualisation.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/RNN_visualisation.png)
 
 
 ##### Gated Recurrent Units
@@ -146,15 +146,15 @@ This is approach would be intractable in practice. So instead:
 	* Cho et al., EMNLP 2014
 	* Chung, Gulcehre, Cho, Bengio, DLUFL 2014
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_shortcut.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/GRU_shortcut.png)
 
 * **candidate update** equivalent to RNN update
 * **update gate** adaptively allows information from far past timesteps to directly interact with the current timestep
 * **reset gate** enables parts of the hidden state to be forgotten, otherwise some past information would be around forever
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_gates.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/GRU_gates.png)
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/GRU_visualisation.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/GRU_visualisation.png)
 
 * the reset gate decides what portion is "readable"
 
@@ -175,15 +175,15 @@ This is approach would be intractable in practice. So instead:
 * LSTM's candidate update and GRU's candidate update are analogous
 * the LSTM's "forget gate" is usually written as a "don't forget gate"
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/LSTM_secret.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/LSTM_secret.png)
 
 * the first timestep is 127 and we count back to zero here:
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/lstm_vs_rnn_127.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/lstm_vs_rnn_127.png)
 
 * at ~100 timesteps, LSTMs tap out too: 
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/lstm_vs_rnn_32.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/lstm_vs_rnn_32.png)
 
 
 #### Steps for Training a (gated) RNN
@@ -310,11 +310,11 @@ From the following key literature:
 		
 #### Traditional Speech Recognition
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/traditional_ASR.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/traditional_ASR.png)
 
 #### Neural Network Approach to Speech Recognition
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/nn_ASR.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/nn_ASR.png)
 
 * each component is trained independently, with different objective functions
 * errors in one component may not behave well with errors in another component
@@ -326,7 +326,7 @@ From the following key literature:
 		* trend is in the direction of this approach
 		* e.g., "Listen Attend and Spell", which is the focus of Navdeep's lecture
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/end_to_end_ASR_as_model.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/end_to_end_ASR_as_model.png)
 
 * works with raw audio
 * performs better with minimal preprocessing, i.e., log spectrogram
@@ -335,7 +335,7 @@ From the following key literature:
 
 #### Connectionist Temporal Classification
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/CTC_peaks.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/CTC_peaks.png)
 
 * produces correct sounds but lacks correct spelling and grammar
 	* by using language model to rescore or during training (e.g., with "OK, Google"), this can be fixed
@@ -344,9 +344,9 @@ From the following key literature:
 
 #### Listen Attend and Spell
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/seq2seq_ASR.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/seq2seq_ASR.png)
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/seq2seq_ASR_attn.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/seq2seq_ASR_attn.png)
 
 * for attention: 
 	* calculate similarity scores between the decoder "query" and encoder "state" timesteps
@@ -380,11 +380,11 @@ From the following key literature:
 
 #### Choosing Output Targets
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/choosing_output_targets.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/choosing_output_targets.png)
 
 * even better:
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/choosing_better_targets.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/choosing_better_targets.png)
 
 * a problem with this approach is that during sequence generation (decoding), shorter, less accurate senteneces have the lowest cost, e.g., "" may have the lowest cost of all
 	* the solution is to add a "coverage reward", which rewards model for generating longer sentences by lowering cost for this
@@ -413,7 +413,7 @@ From the following key literature:
 		* often sub-phrase is not linguistically or cognitively plausible
 		* afterward, group the sub-phrases
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/what_is_a_convolution.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/what_is_a_convolution.png)
 
 * the equivalent to a pixel in NLP is a word vector
 
@@ -425,11 +425,11 @@ From the following key literature:
 	* Kim (2014) "CNNs for Sentence Classification"
 * filter of size *k*=2 convolves over bigrams, *k*=3 trigrams
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/single_layer_CNN.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/single_layer_CNN.png)
 
 * add zero-padding to both the end of the sentence and (not shown in next slide!) the beginning of the sentence
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/CNN_feature_map.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/CNN_feature_map.png)
 
 * pooling layer
 	* "max-over-time" pooling layer (= max-pooling layer)
@@ -515,18 +515,37 @@ From the following key literature:
 ---
 ### Lecture 14: Tree Recursive Neural Networks and Constituency Parsing
 
-#### SECTION TITLE
+* Christopher theorises language has an inherent tree structure
+* recursive is "some kind" of recursion but distinct from RNNs proper, involve tree structure
 
-* bullet
+#### The Spectrum of Language in Computer Science
 
+* **compositionality**
+	* how can we know when larger units are similar in meaning?
+	* e.g., (snowboarder) = (person on a snowboard)
+	* language understanding and AI require being able to understand bigger things from knowing about smaller parts
+	* tree recursive networks are one solution
+	* here's a computer vision analogy: 
+	
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/heres_the-church_here_are_the_people.png)
 
+* recursive structure:
+	* used in CS algos
+	* Chomsky posits that recursive language capabilities is what makes humans uniquely intelligent
+	* as above, Christopher theorises language has an inherent tree structure
+	
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/are_languages_recursive.png)
+
+##### Building on Word Vector Space Models
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/bldg_on_WVSMs.png)
 
 
 ---
 
 ### Lecture 15: Coreference Resolution
 
-#### SECTION TITLE
+#### WORDS 
 
 * bullet
 
