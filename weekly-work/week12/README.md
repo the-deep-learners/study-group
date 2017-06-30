@@ -540,6 +540,54 @@ From the following key literature:
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/bldg_on_WVSMs.png)
 
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/phrases_in_vector_space.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/learned_tree_structure.png)
+
+##### RNNs vs RNNs
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/recursive_vs_recurrent_NN.png)
+
+* recurrent networks capture prefixes (Richard mentioned above), but not whole sentence structure
+* despite this -- the "good linguistic reasons" for liking recursive networks -- recursive networks haven't "swept the world" like recurrent ones have (the latter used 10x as much)
+* the drawback of recursive models is that it requires categorical choices that don't backprop well and aren't GPU-friendly
+
+##### RNNs vs CNNs
+
+* recursive NNs: get compositional vectors for grammatical phrases only
+* CNNs: computes vectors for every possible sub-phrase (discussed above)
+	* many of the sub-phrases aren't grammatical and don't make sense
+	* doesn't need a parser
+	* maybe not linguistically or cognitively plausible
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/RNNs_vs_CNNs.png)
+
+#### Recursive NNs for Structure Prediction
+
+* it *is* possible to backpropagate through tree structure (Goller & Küchler, 1996)
+
+#### Simple TreeRNNs 
+
+* "decent results" with single weight matrix
+* could capture some phenomena but not adequate for more complex, higher-order composition or parsing long sentences
+* no real interaction between input words
+
+#### TreeRNN v2: Syntatically-Untied RNN
+
+* symbolic Context-Free Grammar (CFG) backbone is adequate for basic syntatic structure
+* I don't really understand any of this *composition matrix* business, but it is the critical difference that made v2 the better performer
+* **Compositional Vector Grammar** = PCFG + TreeRNN
+
+#### TreeRNN v3: Compositionality through Recursive Matrix-Vector Spaces
+
+* proposes a new composition function
+* pretty fun sentiment distributions: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/sentiment_distributions.png)
+
+
+
+
 
 ---
 
