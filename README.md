@@ -54,7 +54,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 
 # Session Notes
 
-See the [weekly work](https://github.com/the-deep-learners/study-group/tree/master/weekly-work) subdirectories for details of what we covered each session, including summary notes.
+Click through for detailed summary notes from each session: 
 
 1. [August 17th, 2016](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week1): Perceptrons and Sigmoid Neurons
 2. [September 6th, 2016](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week2): The Backpropagation Algorithm
