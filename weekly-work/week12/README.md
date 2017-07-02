@@ -2,14 +2,14 @@
 
 *Meeting date: July 1st, 2017* (Happy 150th Birthday, Canada!)
 
-For our fourth consecutive session, we delved into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). In addition to discussing the content from four of these lectures (detailed notes below), we also:
+For our fourth consecutive session, we delved into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). 
+
+A summary blog post, replete with photos of the session, can be found [here](ADD LINK). In addition to discussing the content from four of the CS224N lectures (detailed notes below), we:
 
 * pored over the [details of LSTM units](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) -- thanks to Thomas Balestri for leading this
 * were delighted by Grant Beyleveld's [Quick Draw](https://quickdraw.withgoogle.com/) octopus-drawing Generative Adversarial Network: 
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/octopus-gan.gif)
-
-A summary blog post, replete with photos of the session, can be found [here](ADD LINK). 
 
 
 
