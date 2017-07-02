@@ -67,6 +67,7 @@ See the [weekly work](https://github.com/the-deep-learners/study-group/tree/mast
 9. [March 6th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week9): Word Vectors, AI *x* Fashion, and U-Net
 10. [March 27th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week10): word2vec Mania + GANs
 11. [April 19th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week11): Recurrent Neural Networks, including GRUs and LSTMs
+12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Neural Machine Translation, Attention, more detail on LSTMs, Speech Processing, and Tree Recursive NNs
 
 ***
 
