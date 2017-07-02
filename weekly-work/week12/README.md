@@ -1,8 +1,13 @@
 # Session XII: Models with Attention
 
-*Meeting date: June XX, 2017*
+*Meeting date: July 1st, 2017* (Happy 150th Birthday, Canada!)
 
-For our fourth consecutive session, we delved further into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). 
+For our fourth consecutive session, we delved into *Natural Language Processing with Deep Learning* by following along with the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6). In addition to discussing the content from four of these lectures (detailed notes below), we also:
+
+* pored over the [details of LSTM units](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) -- thanks to Thomas Balestri for leading this
+* were delighted by Grant Beyleveld's [Quick Draw](https://quickdraw.withgoogle.com/) octopus-drawing Generative Adversarial Network: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week12/img/octopus-gan.gif)
 
 A summary blog post, replete with photos of the session, can be found [here](ADD LINK). 
 
@@ -18,15 +23,10 @@ Because of the extended gap between sessions to create space for recording [Deep
 1. [End-to-End Models for Speech Processing](https://www.youtube.com/watch?v=3MjIkWxXigM&index=13&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 2. [Convolutional Neural Networks](https://www.youtube.com/watch?v=Lg6MZw_OOLI&index=14&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 3. [Tree Recursive Neural Networks and Constituency Parsing](https://www.youtube.com/watch?v=RfwgqPkWZ1w&index=15&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
-4. [Coreference Resolution](https://www.youtube.com/watch?v=rpwEWLaueRk&index=16&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 
 
 ---
-## Summary
-
-
-Topic highlights of the session included: 
-
+## Lecture Notes
 
 ### Lecture 10: Neural Machine Translation and Models with Attention
 
@@ -504,7 +504,7 @@ From the following key literature:
 	2. dev(elopment)
 	3. test
 * we could, in theory:
-	* repeatedly train with training data, validate with dev set, to select optimal hyperparamters
+	* repeatedly train with training data, validate with dev set, to select optimal hyperparameters
 	* with optimal hyperparameters, combine training and dev set to more accurately identify global minimum
 * in practice:
 	* this approach works well with convex problems
@@ -587,25 +587,12 @@ From the following key literature:
 
 
 
-
-
----
-
-### Lecture 15: Coreference Resolution
-
-#### WORDS 
-
-* bullet
-
-
-
-
 ---
 
 ## Up Next
 
-For our next session, the recommended preparatory work is: 
+For our next session, the recommended preparatory work is viewing: 
 
-1. lecture
+1. [Coreference Resolution](https://www.youtube.com/watch?v=rpwEWLaueRk&index=16&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 2. lecture
 3. lecture
