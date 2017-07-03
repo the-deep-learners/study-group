@@ -591,8 +591,9 @@ From the following key literature:
 
 ## Up Next
 
-For our next session, the recommended preparatory work is viewing: 
+For our next session, the recommended preparatory work is wrapping up viewing the CS224N lectures, i.e.:
 
 1. [Coreference Resolution](https://www.youtube.com/watch?v=rpwEWLaueRk&index=16&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
-2. lecture
-3. lecture
+2. [Dynamic Neural Networks for Question Answering](https://www.youtube.com/watch?v=T3octNTE7Is&index=17&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
+3. [Issues in NLP and Possible Architectures for NLP](https://www.youtube.com/watch?v=B4v545V3Dq0&index=18&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
+4. [Tackling the Limits of Deep Learning for NLP](https://www.youtube.com/watch?v=JYwNmSe4HqE&index=19&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
