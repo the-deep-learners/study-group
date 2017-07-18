@@ -40,7 +40,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett) on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
 2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko) on his NumPy implementation of *k*-Nearest Neighbours (*session VI*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire) on the deep learning start-up investment atmosphere (*session VIII*)
-3. [Grant Beyleveld](https://grantbeyleveld.wordpress.com/) on his implementation of the U-Net Convolutional Network (*session IX*)
+3. [Grant Beyleveld](https://grantbeyleveld.wordpress.com/) on his U-Net Convolutional Network (*session IX*) and GAN (*session XII*) implementations 
 3. [Jessica Graves](https://sefleuria.tumblr.com/) on applications of Deep Learning to the fashion industry (*session IX*)
 4. [V.T. Rajan](https://www.linkedin.com/in/vtrajanphd/) on deriving the word2vec algorithm (*session X*)
 5. Karl Habermas on his NumPy implemention of the word2vec algorithm (*session X*)
