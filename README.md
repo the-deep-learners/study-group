@@ -68,7 +68,7 @@ Click through for detailed summary notes from each session:
 10. [March 27th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week10): word2vec Mania + GANs
 11. [April 19th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week11): Recurrent Neural Networks, including GRUs and LSTMs
 12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Translation, Attention, more LSTMs, Speech-to-Text, and TreeRNNs
-13. August 2017: Model Architectures for Answering Questions
+13. August 2017: Question-Answering Dynamic Neural Networks and Overcoming the Limits of Deep Learning for NLP
 
 ***
 
