@@ -47,6 +47,8 @@ In chronological order, we have experienced the joy of being enlightened by:
 6. David Epstein on Generative Adversarial Networks (*session X*)
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mixtures (*session XI*)
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
+9. [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations (*session XIII*)
+10. [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (*session XIII*)
 
 ![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
