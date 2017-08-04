@@ -57,7 +57,7 @@ The recommended preparatory work for this session was double the usual, i.e., le
 * contrasts with less-common, "never-modelled" **cataphora**, which reference a later word
 * not all anaphoric relations are coreferential
 
-#### Building Coference Architectures
+#### Building Coreference Architectures
 
 * fundamentally, these need to model nouns and pronouns (which are often anaphores) as distinct
 
@@ -84,7 +84,7 @@ Each of these model types is introduced by Manning:
 * there are four relevant papers
 	* by two author sets 
 	* all since 2015
-	* two of four Mannng co-authored with Kevin Clark
+	* two of four Manning co-authored with Kevin Clark
 		* one of the Clark & Manning papers involves deep reinforcement learning and is a Mention-Ranking model; Manning describes this approach in detail
 
 
@@ -94,13 +94,94 @@ Each of these model types is introduced by Manning:
 ---
 ### Lecture 16: Dynamic Neural Networks for Question Answering
 
-#### HEADING
+#### Can *Any* NLP Task be Thought of as a Question-Answering Task?
 
-* text
+* consider the following:
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/img.png)
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/qa_examples.png)
 
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/more_qa_examples.png)
 
+##### Major Obstacles
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/obstacle_1.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/obstacle_2.png)
+
+#### Dynamic Memory Networks
+
+* an architecture that resolves the first major obstacle (but makes no in-roads on the second)
+* multi-task learning
+* if we have a problem to tackle like this...
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/harder_questions.png)
+
+* ...a dynamic memory network is well-suited to the task: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/dynamic_memory_network.png)
+
+* as a standard computer-science practice, modules should be independent; changes in one shouldn't affect interoperability with the others at their interfaces
+
+##### Modules
+
+* input module
+	* computes hidden state for every word in a single continuous RNN (e.g., GRU) sequence
+	* hidden state from last word in previous sentence forming starting point for first word in next sentence
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/input_module.png)
+
+* question vector
+	* also RNN, e.g., GRU
+	* *can* share weights with input module
+	* output hidden state *q* after going through hidden state of every word in question
+	* *q*, e.g, incorporating hidden state for "football", triggers attentional mechanisms over input module
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/question_module.png)
+
+* episodic module 
+	* incorporates attention by having a global gate that turns off GRUs if deemed irrelevant to the question or memory
+	* memory state *m* is final hidden state
+	* *m* therefore stores any relevant facts, e.g., about "John" and "football"
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/episodic_module.png)
+
+* *q* and *m* are considered jointly by answer module (softmax with cross-entropy error)
+	* facilitates end-to-end training
+* this architecture facilitates **transitive reasoning** (understanding relationship of A and D by A->B->C->D logic) by taking multiple passes over the inputs
+	* in the example:
+		1. first pass picks up significance of "John" to "football"
+		2. second pass ties "John" to the hallway where he left the football
+* **co-attention mechanisms** to revise context of question by inputs (e.g., "can I cut you?" means different things if input involves knife-wielding vs involving a queue of people)
+* "surprisingly broad" set of "reasoning" capabilities as long as that type of reasoning is in the training set
+
+#### Breadth of DMN Tasks with Single Architecture
+
+Involves different hyperparameters between tasks (with number of a passes being a hyperparameter), but same architecture; tasks include: 
+
+* **sentiment analysis** (two passes better than one as attention is sharper
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/sharper_attn.png)
+
+* **part-of-speech tagging** (one pass sufficient)
+* **visual question-answering** (state-of-the-art "out of the box")
+	* doesn't, however, distinguish distinct objects
+	* and can't count a large number of objects (anything more than a handful)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/diff_inputs.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/visual_attn.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/visual_attn_2.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/visual_attn_3.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/tennis_Qs.png)
+
+##### Summary
+
+* most NLP tasks can be reducd to QA
+* DMN accurately solves a variety of tasks
+* more advanced option: **Dynamic Coattention Networks** (next lecture)
 
 ---
 ### Lecture 17: Issues in NLP and Possible Architectures for NLP
