@@ -2,12 +2,16 @@
 
 *Meeting date: August 5th, 2017* 
 
-Lucky Session Numero 13 marks the end of our journey through the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) on *Natural Language Processing with Deep Learning*. This session marks the first anniversary of the Deep Learning Study Group, which held its first meeting on August 17th, 2016. Woot woot. 
+Lucky Session Numero 13 concludes our journey through the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) on *Natural Language Processing with Deep Learning*. This session marks the first anniversary of the Deep Learning Study Group -- we held our first meeting on August 17th, 2016. Woot woot. 
 
-A summary blog post, replete with photos of the session, can be found __[here](ADD LINK)__. In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed presentations and discussions from: 
+<!--
+A summary blog post, replete with photos of the session, can be found __[here](ADD LINK)__. 
+-->
 
-* [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations
-* [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media
+In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed delightful presentations and discussions with: 
+
+* [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations that leverage [Estimators](https://www.tensorflow.org/extend/estimators) (see code and resources from her talk [here](https://github.com/mari-linhares/tensorflow-workshop/tree/master/workshops/Deep%20Learning%20Study%20Group%20NYC))
+* [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (code [here](https://github.com/druce/deeplearning20170805))
 
 
 
@@ -333,6 +337,44 @@ Involves different hyperparameters between tasks (with number of a passes being 
 
 ![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/QA_independence.png)
 
+#### Obstacle 6: RNNs are Slow
+
+* solution: take the best and parallelisable parts of RNNs and CNNs
+	* **Quasi-Recurrent Neural Network**
+	* from Bradbury, ..., & Socher (ICLR 2017)
+	
+#### Obstacle 7: Architecture Search is Slow
+
+* no shit: "manual process that requires a lot of expertise"
+* solution: use "AI" to find an optimal architecture for any problem
+	* *Neural architecture search with reinforcement learning* (Zoph & Lee, 2016)
+	
+##### 	Approach
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/architecture_search.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/arch_search_2.png)
+
+##### Performance
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/arch_search_3.png)
+
+##### The Neural Architecture's Solution
+
+* it created a cell type much more complex than LSTM
+	* likely has no intuitive underpinnings
+	* it simply works well for the task
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/arch_search_4.png)
+
+#### Lots of Limits for DeepNLP
+
+* Q&A
+* Multi-Task Learning
+* combined Multimodal, Logical, and Memory-Based Reasoning
+* learning from few or single examples
+	* current approaches all dependent on lots of relevant training examples
+
 
 #### Research Highlight: Neural Turing Machines
 
@@ -343,7 +385,7 @@ Involves different hyperparameters between tasks (with number of a passes being 
 ---
 ## Up Next
 
-For our next session, the recommended preparatory work is ...:
+For our next session, we will be studying Reinforcement Learning. The recommended preparatory work is: 
 
-1. text
-2. text
+1. TBD
+2. TBD
