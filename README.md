@@ -27,7 +27,7 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 
 ## Application
 
-Our applications have largely involved convolutional neural networks built in Python with [Numpy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), [TensorFlow, or Keras](https://insights.untapt.com/fundamental-deep-learning-code-in-tflearn-keras-theano-and-tensorflow-66be10a03227). 
+Our applications have involved a broad range of neural network architectures built largely in Python with [Numpy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), [TensorFlow, and/or Keras](https://insights.untapt.com/fundamental-deep-learning-code-in-tflearn-keras-theano-and-tensorflow-66be10a03227). 
 
 ![katya](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5974.JPG)
 
