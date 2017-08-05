@@ -186,12 +186,96 @@ Involves different hyperparameters between tasks (with number of a passes being 
 ---
 ### Lecture 17: Issues in NLP and Possible Architectures for NLP
 
-#### HEADING
+#### People are out to "solve" language
 
-* text
+* E.g., Yann LeCun
+* Manning doesn't think there will be an IMAGENET/AlexNet single data set/model combo in NLP 
+* "instead of just applying LSTMs to language, we could be reaching for the stars" 
+* **what we have**: 
+	1. BiLSTMs with attention are taking over NLP, improving our ability to do *everything*
+	2. neural methods are leading to a *renaissance* for all language generation tasks, e.g., MT, dialog, QA, summarisation
+	3. there's a real scientific question of where (and whether!) we need
+		* explicit, localist language, and
+		* knowledge representations / inferential mechanisms
+* **what we still need**:
+	1. our methods for building and access **memories** and **knowledge** are very primitive (LSTMs go back up to 100 cells)
+	2. current models have almost nothing for developing and executing **goals** and **plans**
+	3. we have inadequate abilities for understanding and using **inter-sentence relationships*
+	4. we can't, at a large scale, do **elaborations** from a situation using **common sense knowledge**
+	
+#### Political Ideology Detection Using RNNs
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/img.png)
+* a paper by *Iyyer, Enns, Boyd-Graber & Reznik (2014)*
+	* infers liberalism or conservatism of statements
+	* involve TreeRNNs (*recursive* NNs) as discussed earlier
+* TreeRNNs
+	* pros: 
+		* theoretically appealing
+		* empirically competitive
+	* cons:
+		* prohibitively slow (not well-suited to batch computations on GPUs because of input-specific structure)
+		* often used with an external parser
+		* don't exploit complementary linear structure of language
+	* a solution to slowness:
+		* proposed by Bowman, Gauthier et al. (2016) as **Shift-reduce Parser-Interpreter NN (SPINN)**
+		* has base model equivalent to TreeRNN 
+		* supports batched computation on GPUs (25x speedup)
+		* bonus: effective new hybrid that combines linear and tree-structured context
+		* can stand alone without parser
 
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/SPINN.png)
+
+* the SPINN model was evaluated on its inference capability with this corpus: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/inference_corpus.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/SNLI_results.png)
+
+* situations where SPINN is better: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/where_SPINN_is_better.png)
+
+#### Below the Word Level: Writing Systems
+
+* the primary idea here is character- or morpheme-level 
+* complicated by human-language writing having a fair bit of variability: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/writing_systems.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/ws_2.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/ws_3.png)
+
+##### Morphology 
+
+* in traditional NLP systems, the morpheme was the smallest semantic unit
+* in deep learning, it's little studied
+	* Luong, Socher & Manning (2013) applied TreeRNN to morphemes
+	* could alternatively work with character n-grams (this may have many of the benefits of morphemes, modelled more easily)
+
+#####  Character-Level Models
+
+* word embeddings can be composed from character embeddings
+	* generates embeddings for unknown words
+	* similar spellings have similar embeddings
+	* has proven to work very well
+* **character-based LSTM**
+	* *Ling et al. (2015, EMNLP)*
+	* recurrent language model with BiLSTMs building word representations
+	* used as Language Model and for Part-of-Speech tagging
+
+##### Two Trends in Sub-Word NMT
+
+1. **seq2seq** architecture
+	* uses smaller units
+	* e.g.:
+		* Sennrich et al. (ACL 2016)
+		* Chung, Cho & Bengio (ACL 2016)
+2. **hybrid** architecture
+	*  RNN for *words* + something else for *characters*
+	* e.g.:
+		* Costa-Jussà & Fonollosa (ACL 2016)
+		* Luong & Manning (ACL 2016)
 
 
 ---
@@ -208,7 +292,7 @@ Involves different hyperparameters between tasks (with number of a passes being 
 ---
 ## Up Next
 
-For our next session, the recommended preparatory work is wrapping up viewing the CS224N lectures, i.e.:
+For our next session, the recommended preparatory work is ...:
 
 1. text
 2. text
