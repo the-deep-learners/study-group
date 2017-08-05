@@ -1,6 +1,6 @@
 # Session XIII: Model Architectures for Answering Questions and Overcoming NLP Limits
 
-*Meeting date: August __XX__, 2017* 
+*Meeting date: August 5th, 2017* 
 
 Lucky Session Numero 13 marks the end of our journey through the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) on *Natural Language Processing with Deep Learning*. This session marks the first anniversary of the Deep Learning Study Group, which held its first meeting on August 17th, 2016. Woot woot. 
 
@@ -281,13 +281,64 @@ Involves different hyperparameters between tasks (with number of a passes being 
 ---
 ### Lecture 18: Tackling the Limits of Deep Learning for NLP
 
-#### HEADING
+#### The Limits of Single-Task Learning
 
-* text
+* great performance improvements
+* projects start from random
+* single unsupervised task can't fix it
+* how can we express different tasks in the same framework, 
+	* e.g.:
+		* sequence tagging
+		* sentence-level classification
+		* seq2seq?
+	* this is important because language involves many different types of inference or knowledge
+* in this lecture, Richard tackles Obstacle 2 (**Joint Many-Task Learning**) from Lecture 16
 
-![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/img.png)
+#### Tackling Joint Training
+
+* at this stage, "we should know everything we need to" to build this architecture: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/tackling_joint_training.png)
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/semantic_relatedness.png)
+
+* *chunk training* with delta parameter to prevent lower levels from changing too much (POS weights stay relatively constant): 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/chunking_training.png)
+
+* this multi-task model achieves state-of-the-art results: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/state_of_the_art.png)
+
+#### Obstacle 3: No Zero Shot Word Predictions
+
+* it's natural to learn new words in an active conversation 
+	* systems should be able to pick them up
+* a solution may be: 
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/pointer_mixture.png)
 
 
+#### Obstacle 4: Duplicate Word Representations
+
+* different encodings for encoder (w2v/glove word vectors) and decoder (softmax classification for words)
+* duplicate parameters/meaning exist
+* a solution: tie word vectors and train single weights jointly
+	* theoretically motivated
+	* *Inan, Khosravi & Socher (ICLR 2017)*
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/tying_word_vectors.png)
+
+#### Obstacle 5: Questions have input-independent representations
+
+![](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/img/QA_independence.png)
+
+
+#### Research Highlight: Neural Turing Machines
+
+* references
+	* Olah & Carter (2016) *Distill*
+	* *deepmind.com/blog/differentiable-neural-computers*
 
 ---
 ## Up Next
