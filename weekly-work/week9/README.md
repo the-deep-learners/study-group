@@ -278,9 +278,9 @@ Phonetic/phonological analysis (in level 1), level 3, and level 4 are covered in
 
 ###### Directly learning low-dimensional word vectors (2017)
 
-* earliest paper on this idea is [Rumelhart et al., 1986](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf)
+* earliest paper on this idea is Rumelhart et al., 1986
 * most influential modern paper on this is [Bengio et al., 2003](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) though it was largely ignored at the time
-* [Colllobert & Weston, 2008](http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf) revived Bengio's modern approach
+* [Collobert & Weston, 2008](https://ronan.collobert.com/pub/matos/2008_nlp_icml.pdf) revived Bengio's modern approach
 * a recent, even simpler and faster model is [Mikolov et al., 2013](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 
 ###### Main Idea of Word2vec (2017)
