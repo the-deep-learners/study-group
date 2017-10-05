@@ -25,7 +25,7 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 3. Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
 4. Reinforcement Learning (*session XIV*)
 
-If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon's interactive, [six-hour introduction](https://www.safaribooksonline.com/library/view/deep-learning-with/9780134770826/) published by Addison-Wesley. 
+If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon's interactive, [six-hour introduction](https://www.safaribooksonline.com/library/view/deep-learning-with/9780134770826/) published by Addison-Wesley, or enroll in his [30-hour, in-classroom course](https://medium.com/@jjpkrohn/build-your-own-deep-learning-project-via-my-30-hour-course-e995ea025ba8) at the NYC Data Science Academy. 
 
 
 ## Application
