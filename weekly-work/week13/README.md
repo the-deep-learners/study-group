@@ -19,8 +19,6 @@ In addition to wrapping up the CS224N lectures (detailed notes from the final fo
 ---
 ## Recommended Preparatory Work
 
-The recommended preparatory work for this session was double the usual, i.e., lectures ten through fifteen: 
-
 1. [Coreference Resolution](https://www.youtube.com/watch?v=rpwEWLaueRk&index=16&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 2. [Dynamic Neural Networks for Question Answering](https://www.youtube.com/watch?v=T3octNTE7Is&index=17&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 3. [Issues in NLP and Possible Architectures for NLP](https://www.youtube.com/watch?v=B4v545V3Dq0&index=18&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
