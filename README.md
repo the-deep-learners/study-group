@@ -39,7 +39,7 @@ Our applications have involved a broad range of neural network architectures bui
 In chronological order, we have experienced the joy of being enlightened by: 
 
 1. [Katya Vasilaky](https://kathrynthegreat.github.io/) on the mathematics of deep learning (*session II*) and on regularization (*session VIII*)
-2. [Thomas Balestri](https://www.linkedin.com/in/thomasbalestri) on countless machine-learning underpinnings (*sessions III and IV*) and LSTM gates (*session XII*)
+2. [Thomas Balestri](https://www.linkedin.com/in/thomasbalestri) on countless machine-learning underpinnings (*sessions III and IV*), LSTM gates (*session XII*), and Reinforcement Learning (*session XIV*)
 3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett) on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
 2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko) on his NumPy implementation of *k*-Nearest Neighbours (*session VI*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire) on the deep learning start-up investment atmosphere (*session VIII*)
@@ -73,8 +73,8 @@ Click through for detailed summary notes from each session:
 10. [March 27th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week10): word2vec Mania + GANs
 11. [April 19th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week11): Recurrent Neural Networks, including GRUs and LSTMs
 12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Translation, Attention, more LSTMs, Speech-to-Text, and TreeRNNs
-13. [August 5th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13/README.md): Model Architectures for Answering Questions and Overcoming NLP Limits
-14. October 2017: Reinforcement Learning
+13. [August 5th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13): Model Architectures for Answering Questions and Overcoming NLP Limits
+14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
 
 ***
 
