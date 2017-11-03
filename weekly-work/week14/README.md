@@ -21,7 +21,6 @@ In addition to wrapping up the CS224N lectures (detailed notes from the final fo
 
 1. [The introductory lecture](https://www.youtube.com/watch?v=8jQIKgTzQd4) from CalTech's (CS294-112) *Deep Reinforcement Learning* Course
 2. Emma Brunskill's *Tutorial on Reinforcement Learning* (both parts [one](https://www.youtube.com/watch?v=fIKkhoI1kF4) and [two](https://www.youtube.com/watch?v=8hK0NnG_DhY))
-3. [The second lecture](https://www.youtube.com/watch?v=kl_G95uKTHw) from CS294-112 on *Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning*
 
 
 
@@ -384,6 +383,7 @@ The following are covered by Chelsea in sequence:
 	* best-in-class
 	* efficiency is also important to some researchers, but is not the focus of Emma's workshop
 
+<!---
 ---
 ### CalTech CS294-112 Lecture II (1/23/17) on Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning
 
@@ -391,18 +391,14 @@ The following are covered by Chelsea in sequence:
 
 * point
 * point
-
+--->
 
 
 
 ---
 ## Up Next
 
-<!---
+For our next session, we delve deeper into Reinforcement Learning. The recommended preparatory work is: 
 
-For our next session, we will be studying Reinforcement Learning. The recommended preparatory work is: 
-
-1. TBD
-2. TBD
-
---->
+1. [The second lecture](https://www.youtube.com/watch?v=kl_G95uKTHw) from CS294-112 on *Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning* (if, like me, you didn't get a chance to watch this last time)
+2. The Reinforcement Learning chapter (Chapter 16) from Aurélien Géron's [Hands-on Machine Learning book](http://shop.oreilly.com/product/0636920052289.do)
