@@ -383,7 +383,4 @@ Involves different hyperparameters between tasks (with number of a passes being 
 ---
 ## Up Next
 
-For our next session, we will be studying Reinforcement Learning. The recommended preparatory work is: 
-
-1. TBD
-2. TBD
+For our next session, we will be studying [Reinforcement Learning](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14).
