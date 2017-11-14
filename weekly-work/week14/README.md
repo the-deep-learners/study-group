@@ -19,7 +19,7 @@ In addition to wrapping up the CS224N lectures (detailed notes from the final fo
 ---
 ## Recommended Preparatory Work
 
-1. [The introductory lecture](https://www.youtube.com/watch?v=8jQIKgTzQd4) from CalTech's (CS294-112) *Deep Reinforcement Learning* Course
+1. [The introductory lecture](https://www.youtube.com/watch?v=8jQIKgTzQd4) from the University of California, Berkeley's (CS294-112) *Deep Reinforcement Learning* Course
 2. Emma Brunskill's *Tutorial on Reinforcement Learning* (both parts [one](https://www.youtube.com/watch?v=fIKkhoI1kF4) and [two](https://www.youtube.com/watch?v=8hK0NnG_DhY))
 
 
@@ -401,4 +401,7 @@ The following are covered by Chelsea in sequence:
 For our next session, we delve deeper into Reinforcement Learning. The recommended preparatory work is: 
 
 1. [The second lecture](https://www.youtube.com/watch?v=kl_G95uKTHw) from CS294-112 on *Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning* (if, like me, you didn't get a chance to watch this last time)
-2. The Reinforcement Learning chapter (Chapter 16) from Aurélien Géron's [Hands-on Machine Learning book](http://shop.oreilly.com/product/0636920052289.do)
+2. Andrej Karpathy's [blog post](http://karpathy.github.io/2016/05/31/rl/) *Deep Reinforcement Learning: Pong from Pixels* 
+2. Additional resources to skim or dig your teeth into, depending on how much time you have: 
+	* Kai Arulkumaran and colleagues' [arXiv review paper](https://arxiv.org/abs/1708.05866) *A Brief Survey of Deep Reinforcment Learning*
+	* The *Reinforcement Learning* chapter (Chapter 16) from Aurélien Géron's [Hands-on Machine Learning book](http://shop.oreilly.com/product/0636920052289.do)
