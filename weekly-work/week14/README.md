@@ -400,7 +400,7 @@ The following are covered by Chelsea in sequence:
 
 For our next session, we delve deeper into Reinforcement Learning. The recommended preparatory work is: 
 
-1. [The second lecture](https://www.youtube.com/watch?v=kl_G95uKTHw) from CS294-112 on *Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning* (if, like me, you didn't get a chance to watch this last time)
+1. The first two ([one](https://www.youtube.com/watch?v=Q4kF8sfggoI&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3&index=1), [two](https://www.youtube.com/watch?v=C_LGsoe36I8&index=2&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3)) lectures from UC Berkeley CS294-112 **Fall 2017** Lectures, which are continuing to be released presently. Lecture 1 may be skimmed as it overlaps greatly with the material covered above. 
 2. Andrej Karpathy's [blog post](http://karpathy.github.io/2016/05/31/rl/) *Deep Reinforcement Learning: Pong from Pixels* 
 2. Additional resources to skim or dig your teeth into, depending on how much time you have: 
 	* Kai Arulkumaran and colleagues' [arXiv review paper](https://arxiv.org/abs/1708.05866) *A Brief Survey of Deep Reinforcment Learning*
