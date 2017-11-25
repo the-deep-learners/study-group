@@ -405,3 +405,5 @@ For our next session, we delve deeper into Reinforcement Learning. The recommend
 2. Additional resources to skim or dig your teeth into, depending on how much time you have: 
 	* Kai Arulkumaran and colleagues' [arXiv review paper](https://arxiv.org/abs/1708.05866) *A Brief Survey of Deep Reinforcment Learning*
 	* The *Reinforcement Learning* chapter (Chapter 16) from Aurélien Géron's [Hands-on Machine Learning book](http://shop.oreilly.com/product/0636920052289.do)
+	* [OpenAI Lab](https://github.com/kengz/openai_lab)
+	* [Coach](https://github.com/NervanaSystems/coach)
