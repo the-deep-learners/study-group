@@ -4,11 +4,7 @@
 
 Lucky Session Numero 13 concludes our journey through the Stanford [Winter 2017 CS224N lectures](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) on *Natural Language Processing with Deep Learning*. This session marks the first anniversary of the Deep Learning Study Group -- we held our first meeting on August 17th, 2016. Woot woot. 
 
-<!--
-A summary blog post, replete with photos of the session, can be found __[here](ADD LINK)__. 
--->
-
-In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed delightful presentations and discussions with: 
+A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-reinforcement-learning-our-prescribed-study-path-52b959a61f76). In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed delightful presentations and discussions with: 
 
 * [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations that leverage [Estimators](https://www.tensorflow.org/extend/estimators) (see code and resources from her talk [here](https://github.com/mari-linhares/tensorflow-workshop/tree/master/workshops/Deep%20Learning%20Study%20Group%20NYC))
 * [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (code [here](https://github.com/druce/deeplearning20170805))
