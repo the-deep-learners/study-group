@@ -189,7 +189,7 @@ Recent success stories in Deep RL:
 	* **DAGGER** ([Guo et al., 2014](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning))
 2. Robotic manipulation using **guided policy search**: 
 	* [Sergey Levine et al.'s (2015)](https://arxiv.org/abs/1504.00702) *End-to-end training of deep visuomotor policies* (*NY Times* article with leading image of Chelsea Finn and Sergey Levine [here](https://www.nytimes.com/2015/05/22/science/robots-that-can-match-human-dexterity.html))
-	* [John Schulman, Moritz, Sergey Levine, Michael I. Jordan, and Abbeel's (2015)](https://arxiv.org/abs/1506.02438) *High-Dimensional Continuous Control Using Generalized Advantage Estimation
+	* [John Schulman, Moritz, Sergey Levine, Michael I. Jordan, and Abbeel's (2015)](https://arxiv.org/abs/1506.02438) *High-Dimensional Continuous Control Using Generalized Advantage Estimation*
 3. AlphaGo ([Silver et al., 2016](http://www.nature.com/nature/journal/v529/n7587/full/nature16961.html)), which combines many ML elements:
 	* supervised learning
 	* policy gradients
