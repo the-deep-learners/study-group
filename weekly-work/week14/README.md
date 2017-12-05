@@ -4,13 +4,6 @@
 
 We kicked off our coverage of the field of Reinforcement Learning with this session. In addition to discussing all of the Recommended Preparatory Work (see below), we also enjoyed theory and code demos from Thomas Balestri (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-10-17__thomas_balestri__reinforcement_learning.pdf)) based largely on the final chapter of Aurélien Géron's [Hands-On Machine Learning](http://shop.oreilly.com/product/0636920052289.do). A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-reinforcement-learning-our-prescribed-study-path-52b959a61f76).
 
-<!--
-In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed delightful presentations and discussions with: 
-
-* [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations that leverage [Estimators](https://www.tensorflow.org/extend/estimators) (see code and resources from her talk [here](https://github.com/mari-linhares/tensorflow-workshop/tree/master/workshops/Deep%20Learning%20Study%20Group%20NYC))
-* [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (code [here](https://github.com/druce/deeplearning20170805))
--->
-
 
 ---
 ## Recommended Preparatory Work
@@ -23,7 +16,7 @@ In addition to wrapping up the CS224N lectures (detailed notes from the final fo
 ---
 ## Lecture Notes
 
-### CalTech CS294-112 Lecture I (1/18/17) on Deep Reinforcement Learning
+### UC Berkeley CS294-112 Lecture I (1/18/17) on Deep Reinforcement Learning
 
 #### Three Course Instructors
 
@@ -51,7 +44,6 @@ In this lecture, each of the instructors provides an individual high-level overv
 3. Deep Q Learning
 4. Deep Policy Gradients
 5. Research-Level Project in Groups of 2-3 students
-6. 
 
 #### Sergey Levine (Berkeley)
 
@@ -381,7 +373,7 @@ The following are covered by Chelsea in sequence:
 
 <!---
 ---
-### CalTech CS294-112 Lecture II (1/23/17) on Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning
+### UC Berkeley CS294-112 Lecture II (1/23/17) on Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning
 
 #### heading
 
