@@ -57,7 +57,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
 9. [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations (*session XIII*)
 10. [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (*session XIII*)
-11. [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning and their [OpenAI Lab](https://github.com/kengz/openai_lab)
+11. [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning and their [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
 
 ![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
 
