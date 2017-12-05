@@ -2,11 +2,7 @@
 
 *Meeting date: October 17th, 2017* 
 
-We kicked off our coverage of the field of Reinforcement Learning with this session. In addition to discussing all of the Recommended Preparatory Work (see below), we also enjoyed theory and code demos from Thomas Balestri (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-10-17__thomas_balestri__reinforcement_learning.pdf)) based largely on the final chapter of Aurélien Géron's [Hands-On Machine Learning](http://shop.oreilly.com/product/0636920052289.do). 
-
-<!--
-A summary blog post, replete with photos of the session, can be found __[here](ADD LINK)__. 
--->
+We kicked off our coverage of the field of Reinforcement Learning with this session. In addition to discussing all of the Recommended Preparatory Work (see below), we also enjoyed theory and code demos from Thomas Balestri (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-10-17__thomas_balestri__reinforcement_learning.pdf)) based largely on the final chapter of Aurélien Géron's [Hands-On Machine Learning](http://shop.oreilly.com/product/0636920052289.do). A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-reinforcement-learning-our-prescribed-study-path-52b959a61f76).
 
 <!--
 In addition to wrapping up the CS224N lectures (detailed notes from the final four lectures below), we enjoyed delightful presentations and discussions with: 
