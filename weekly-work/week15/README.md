@@ -24,7 +24,7 @@ A summary blog post, replete with photos of the session, can be found [here](LIN
 ---
 ## Notes
 
-### [Deep Reinforcement Learning](https://www.youtube.com/watch?v=lvoHnicueoE) (Lecture 14) from Stanford CS231n's Summer 2017 iteration (with Fei-Fei Li, Justin Johnson and Serena Young)
+### Deep Reinforcement Learning (Lecture 14) from Stanford CS231n's Summer 2017 iteration (with Fei-Fei Li, Justin Johnson and Serena Young)
 
 * lecturer for this lecture is Serena Young
 
