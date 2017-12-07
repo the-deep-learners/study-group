@@ -81,7 +81,7 @@ Click through for detailed summary notes from each session:
 12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Translation, Attention, more LSTMs, Speech-to-Text, and TreeRNNs
 13. [August 5th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13): Model Architectures for Answering Questions and Overcoming NLP Limits
 14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
-15. December 2017: Deep Reinforcement Learning
+15. [December 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning
 
 ***
 
