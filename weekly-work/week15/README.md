@@ -2,7 +2,7 @@
 
 *Meeting date: December 9th, 2017* 
 
-We built on our coverage of Reinforcement Learning with this session. The primary focus was [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/)'s interactive presentation (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-12-09__keng_laura__RL.pdf) on Deep RL theory as well as their [OpenAI Lab](https://github.com/kengz/openai_lab) Python library. Secondarily, we discussed a number of Deep RL resources, including those listed in the Recommended Preparatory Work section below. 
+We built on our coverage of Reinforcement Learning with this session. The primary focus was [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/)'s interactive presentation (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-12-09__keng_laura__RL.pdf)) on Deep RL theory as well as their [OpenAI Lab](https://github.com/kengz/openai_lab) Python library. Secondarily, we discussed a number of Deep RL resources, including those listed in the Recommended Preparatory Work section below. 
 
 <!--
 A summary blog post, replete with photos of the session, can be found [here](LINK).
