@@ -4,9 +4,7 @@
 
 We built on our coverage of Reinforcement Learning with this session. The primary focus was [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/)'s interactive presentation (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-12-09__keng_laura__RL.pdf)) on Deep RL theory as well as their [OpenAI Lab](https://github.com/kengz/openai_lab) Python library. Secondarily, we discussed a number of Deep RL resources, including those listed in the Recommended Preparatory Work section below. 
 
-<!--
-A summary blog post, replete with photos of the session, can be found [here](LINK).
--->
+A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/openai-lab-for-deep-reinforcement-learning-experimentation-6287867eb611).
 
 
 ---
@@ -198,17 +196,8 @@ A summary blog post, replete with photos of the session, can be found [here](LIN
 
 ---
 
-<!--
+
 ## Up Next
 
-For our next session, we delve deeper into Reinforcement Learning. The recommended preparatory work is: 
+For our next session, we delve deeper into Reinforcement Learning theory. The recommended preparatory work will be the lectures from the UC Berkeley CS294-112 Fall 2017 offering. 
 
-1. The first two ([one](https://www.youtube.com/watch?v=Q4kF8sfggoI&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3&index=1), [two](https://www.youtube.com/watch?v=C_LGsoe36I8&index=2&list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3)) lectures from UC Berkeley CS294-112 **Fall 2017** Lectures, which are continuing to be released presently. Lecture 1 may be skimmed as it overlaps greatly with the material covered above. 
-2. Andrej Karpathy's [blog post](http://karpathy.github.io/2016/05/31/rl/) *Deep Reinforcement Learning: Pong from Pixels* 
-2. Additional resources to skim or dig your teeth into, depending on how much time you have: 
-	* Kai Arulkumaran and colleagues' [arXiv review paper](https://arxiv.org/abs/1708.05866) *A Brief Survey of Deep Reinforcment Learning*
-	* The *Reinforcement Learning* chapter (Chapter 16) from Aurélien Géron's [Hands-on Machine Learning book](http://shop.oreilly.com/product/0636920052289.do)
-	* [OpenAI Lab](https://github.com/kengz/openai_lab)
-	* [Coach](https://github.com/NervanaSystems/coach)
-
--->
