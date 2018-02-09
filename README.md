@@ -1,12 +1,12 @@
 # study-group
 
-![smile and wave](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/session_XI_crew.JPG)
+![Laura Graesser and Wah Loon Keng](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_9147.JPG)
 
 We are a diverse group of software engineering and data science professionals from industry and academia. 
 
 Inspired by the [collaborative culture of artificial neural network research](https://www.untapt.com/industry/2016/08/02/deep-learning-study-group/), we hold regular, chilled beverage-enhanced study sessions in midtown Manhattan. At these meetings, we summarise prescribed preparatory material and leverage our individual strengths in computer science, mathematics, statistics, neuroscience, and venture capital to cement our comprehension of concepts and to implement effective deep learning models. 
 
-![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
+![smile and wave](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/session_XI_crew.JPG)
 
 Over the course of our sessions, we follow three parallel paths: 
 
@@ -43,7 +43,7 @@ If you're looking to get a handle on the fundamentals of Deep Learning, check ou
 
 Our applications have involved a broad range of neural network architectures built largely in Python with [Numpy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), [TensorFlow, and/or Keras](https://insights.untapt.com/fundamental-deep-learning-code-in-tflearn-keras-theano-and-tensorflow-66be10a03227). 
 
-![katya](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5974.JPG)
+![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
 
 ## Presentations
 
@@ -65,7 +65,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 10. [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (*session XIII*)
 11. [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning and their [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
 
-![Laura Graesser and Wah Loon Keng](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_9147.JPG)
+![katya](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5974.JPG)
 
 ***
 
