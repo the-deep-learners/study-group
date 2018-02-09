@@ -29,8 +29,8 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) have led coverage of:
 
 1. Deep Reinforcement Learning:
-  * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
-  * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
+    * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
+    * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
 
 If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon Krohn's:
 
