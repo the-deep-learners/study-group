@@ -26,7 +26,13 @@ Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of:
 3. Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
 4. Reinforcement Learning (*session XIV*)
 
-If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon's:
+[Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) have led coverage of:
+
+1. Deep Reinforcement Learning:
+  * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
+  * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
+
+If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon Krohn's:
 
 * six-hour introduction to [Deep Learning in general](https://www.safaribooksonline.com/library/view/deep-learning-with/9780134770826/) 
 * five-hour introduction to [Deep Learning for Natural Language Processing specifically](https://www.safaribooksonline.com/library/view/deep-learning-for/9780134851921/), or his
@@ -59,7 +65,7 @@ In chronological order, we have experienced the joy of being enlightened by:
 10. [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (*session XIII*)
 11. [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning and their [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
 
-![brian](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7624.JPG)
+![Laura Graesser and Wah Loon Keng](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_9147.JPG)
 
 ***
 
@@ -81,13 +87,14 @@ Click through for detailed summary notes from each session:
 12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Translation, Attention, more LSTMs, Speech-to-Text, and TreeRNNs
 13. [August 5th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13): Model Architectures for Answering Questions and Overcoming NLP Limits
 14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
-15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning
+15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning (Deep Q-Learning)
+16. February XX, 2018: Deep Reinforcement Learning (Policy Gradients)
 
 ***
 
 # Acknowledgements
 
-![classic Ed](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
+![classic Ed Donner](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
 
 Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
 
@@ -96,6 +103,6 @@ Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-lov
 
 *With a desire to remain intimately-sized, our study group has reached its capacity. If you'd like to be added to our waiting list, please contact the organiser, [Jon Krohn](https://www.jonkrohn.com/contact/), describing your relevant experience as well as your interest in deep learning. We don't expect you to necessarily be a deep learning expert already :)*
 
-![empty_room](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5959.JPG)
+![Jon Krohn](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5959.JPG)
 
 ***
