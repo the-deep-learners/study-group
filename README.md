@@ -19,16 +19,14 @@ Over the course of our sessions, we follow three parallel paths:
 
 ## Theory
 
-Thus far, [Jon Krohn](https://www.jonkrohn.com/) has led coverage of: 
+Theory coverage has been led by: 
 
-1. Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
-2. Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
-3. Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
-4. Reinforcement Learning (*session XIV*)
-
-[Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) have led coverage of:
-
-1. Deep Reinforcement Learning:
+* [Jon Krohn](https://www.jonkrohn.com/)
+      * Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
+      * Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
+      * Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
+      * Reinforcement Learning (*session XIV*)
+* [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/):
     * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
     * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
 
