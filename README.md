@@ -26,7 +26,7 @@ Theory coverage has been led by:
      * Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
      * Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
      * Reinforcement Learning (*session XIV*)
-* [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/):
+* [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning:
      * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
      * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
 
@@ -61,7 +61,6 @@ In chronological order, we have experienced the joy of being enlightened by:
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
 9. [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations (*session XIII*)
 10. [Druce Vertes](https://www.linkedin.com/in/drucevertes/) on predicting which financial stories go viral on social media (*session XIII*)
-11. [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning and their [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
 
 ![katya](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_5974.JPG)
 
@@ -85,8 +84,8 @@ Click through for detailed summary notes from each session:
 12. [July 1st, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week12): Translation, Attention, more LSTMs, Speech-to-Text, and TreeRNNs
 13. [August 5th, 2017](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week13): Model Architectures for Answering Questions and Overcoming NLP Limits
 14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
-15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning (Deep Q-Learning)
-16. February XX, 2018: Deep Reinforcement Learning (Policy Gradients)
+15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning (Deep Q-Learning and OpenAI Lab)
+16. [February 17th, 2018](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week16): Deep Reinforcement Learning (Policy Gradients and SLM-Lab)
 
 ***
 
