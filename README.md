@@ -19,16 +19,16 @@ Over the course of our sessions, we follow three parallel paths:
 
 ## Theory
 
-Theory coverage has been led by: 
+Theory coverage has been led by:
 
 * [Jon Krohn](https://www.jonkrohn.com/)
-     * Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
-     * Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
-     * Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
-     * Reinforcement Learning (*session XIV*)
-* [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on Deep Reinforcement Learning:
-     * Deep Q-Learning with [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
-     * Policy Gradients and [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
+     * **Artificial Neural Networks** with Michael Nielsen's introductory text [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) (covered in *sessions I through V*)
+     * **Machine Vision** with Fei-Fei Li, Andrej Karpathy and Justin Johnson's [CS231n on Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) (*sessions VI through VIII*)
+     * **Natural Language Processing** with Richard Socher and Christopher Manning's [CS224D (2016)](https://cs224d.stanford.edu/)/[CS224N (2017)](http://web.stanford.edu/class/cs224n/) on Deep Learning for Natural Language Processing (*sessions IX through XIII*)
+     * **Reinforcement Learning** with Sergey Levine's [CS294-112 on Deep Reinforcement Learning](https://www.youtube.com/watch?v=8jQIKgTzQd4) (*session XIV*)
+* [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) on **Deep Reinforcement Learning**
+     * Deep Q-Learning with their [OpenAI Lab](https://github.com/kengz/openai_lab) (*session XV*)
+     * Policy Gradients with their [SLM Lab](https://github.com/kengz/SLM-Lab/) (*session XVI*)
 
 If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon Krohn's:
 
