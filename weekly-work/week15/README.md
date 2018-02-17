@@ -1,4 +1,4 @@
-# Session XV: Deep Reinforcement Learning (OpenAI Lab)
+# Session XV: Deep Reinforcement Learning (Deep Q-Learning and OpenAI Lab)
 
 *Meeting date: December 9th, 2017* 
 
