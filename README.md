@@ -33,7 +33,8 @@ Theory coverage has been led by:
 If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon Krohn's:
 
 * six-hour introduction to [Deep Learning in general](https://www.safaribooksonline.com/library/view/deep-learning-with/9780134770826/) 
-* five-hour introduction to [Deep Learning for Natural Language Processing specifically](https://www.safaribooksonline.com/library/view/deep-learning-for/9780134851921/), or his
+* five-hour introduction to [Deep Learning for Natural Language Processing specifically](https://www.safaribooksonline.com/library/view/deep-learning-for/9780134851921/)
+* five-hour introduction to [Deep Reinforcement Learning and Generative Adversarial Networks](https://www.safaribooksonline.com/library/view/deep-reinforcement-learning/9780135171233/), or his
 * thirty-hour, [in-classroom course](https://medium.com/@jjpkrohn/build-your-own-deep-learning-project-via-my-30-hour-course-e995ea025ba8) at the NYC Data Science Academy. 
 
 
