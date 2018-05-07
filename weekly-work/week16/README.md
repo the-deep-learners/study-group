@@ -4,10 +4,7 @@
 
 For this session, [Laura Graesser](https://www.linkedin.com/in/laura-graesser-60006039/) and [Wah Loon Keng](https://www.linkedin.com/in/theoriesinpractice/) built on the Deep Reinforcement Learning foundations from their [December session at the Deep Learning Study Group](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15). This time, they focused on Policy Gradient algorithms, specifically REINFORCE (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2017-12-09__keng_laura__RL.pdf)) as well as their [SLM-Lab](https://github.com/kengz/SLM-Lab/) Python library, which replaces their *OpenAI Lab* for experimenting with and optimising Deep RL agents across a wide variety of environments. 
 
-
-<!---
-A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/openai-lab-for-deep-reinforcement-learning-experimentation-6287867eb611).
---->
+A summary blog post, replete with photos of the session, can be found [here](https://insights.untapt.com/deep-reinforcement-learning-experiments-run-simultaneously-across-openai-and-unity-environments-62587b89e8ee).
 
 
 ---
