@@ -88,6 +88,7 @@ Click through for detailed summary notes from each session:
 14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
 15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning (Deep Q-Learning and OpenAI Lab)
 16. [February 17th, 2018](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week16): Deep Reinforcement Learning (Policy Gradients and SLM-Lab)
+17. October 16th, 2019: _Deep Learning Illustrated_ Book Launch, BERT/RoBERTa, and Capsule Networks
 
 ***
 
@@ -95,7 +96,7 @@ Click through for detailed summary notes from each session:
 
 ![classic Ed Donner](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/5_cropped.jpg)
 
-Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving CEO Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
+Thank you to [untapt](https://www.untapt.com/) and its visionary, neural net-loving founder Ed Donner for hosting and subsidising all meetings of the Deep Learning Study Group. 
 
 ***
 
