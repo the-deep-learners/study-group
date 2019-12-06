@@ -38,6 +38,8 @@ If you're looking to get a handle on the fundamentals of Deep Learning, check ou
 * five-hour introduction to [Deep Reinforcement Learning and Generative Adversarial Networks](https://www.safaribooksonline.com/library/view/deep-reinforcement-learning/9780135171233/), or his
 * thirty-hour, [in-classroom course](https://nycdatascience.com/courses/deep-learning/) at the NYC Data Science Academy 
 
+![](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/dlsg-xvii.jpg)
+
 
 ## Application
 
