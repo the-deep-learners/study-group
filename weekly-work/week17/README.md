@@ -2,7 +2,7 @@
 
 *Meeting date: October 16th, 2019* 
 
-For this session, [Dmitri Nesterenko](https://www.linkedin.com/in/dmitri-nesterenko/) and [Grant Beyleveld](https://www.linkedin.com/in/grantbey/) presented on Capsule Networks (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2019-10-16_dmitri_nesterenko__Capsule_Nets.pdf)) and "BERT & Friends" (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2019-10-16_grant_beyleveld__BERT.pdf)), respectively. 
+For this session, [Dmitri Nesterenko](https://www.linkedin.com/in/dmitri-nesterenko/) and [Grant Beyleveld](https://www.linkedin.com/in/grantbey/) presented on Capsule Networks (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2019-10-16_dmitri_nesterenko__Capsule_Nets.pdf); code demo [here](https://colab.research.google.com/drive/1MOoxhzAZnkqQyCozVg0-_OM6gtJY9K6r#scrollTo=TL4jNoGqmKMB)) and "BERT & Friends" (slides [here](https://github.com/the-deep-learners/study-group/blob/master/slides/2019-10-16_grant_beyleveld__BERT.pdf)), respectively. 
 
 This session also served as a book launch for Jon Krohn, Grant Beyleveld, and Aglae Bassens' book, [Deep Learning Illustrated](https://www.deeplearningillustrated.com), the content of which was influenced in large part by the previous sessions of the Deep Learning Study Group. The first photo of the three authors together with their book is provided here: 
 
