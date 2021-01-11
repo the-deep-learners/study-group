@@ -32,18 +32,17 @@ Theory coverage has been led by:
 
 If you're looking to get a handle on the fundamentals of Deep Learning, check out Jon Krohn's:
 
-* comprehensive book [Deep Learning Illustrated](https://www.deeplearningillustrated.com)
-* six-hour introduction to [Deep Learning in general](https://www.safaribooksonline.com/library/view/deep-learning-with/9780134770826/) 
-* five-hour introduction to [Deep Learning for Natural Language Processing specifically](https://www.safaribooksonline.com/library/view/deep-learning-for/9780134851921/)
-* five-hour introduction to [Deep Reinforcement Learning and Generative Adversarial Networks](https://www.safaribooksonline.com/library/view/deep-reinforcement-learning/9780135171233/), or his
-* thirty-hour, [in-classroom course](https://nycdatascience.com/courses/deep-learning/) at the NYC Data Science Academy 
+* Comprehensive book [Deep Learning Illustrated](https://www.deeplearningillustrated.com), based on the topics covered in the study group
+* Seven-hour introduction to [Deep Learning in general](https://learning.oreilly.com/videos/deep-learning-with/9780136617617) 
+* Five-hour introduction to [Deep Learning for Natural Language Processing specifically](https://learning.oreilly.com/videos/deep-learning-for/9780136620013/)
+* Six-hour introduction to [Machine Vision, Generative Adversarial Networks, and Deep Reinforcement Learning](https://learning.oreilly.com/videos/machine-vision-gans/9780136620181)
 
-![](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/dlsg-xvii.jpg)
+![](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/dlsg-.jpg)
 
 
 ## Application
 
-Our applications have involved a broad range of neural network architectures built largely in Python with [Numpy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), [TensorFlow, and/or Keras](https://insights.untapt.com/fundamental-deep-learning-code-in-tflearn-keras-theano-and-tensorflow-66be10a03227). 
+Our applications have involved a broad range of neural network architectures built largely in Python with [NumPy](https://github.com/the-deep-learners/study-group/tree/master/nn-from-scratch), TensorFlow, and PyTorch. 
 
 ![claudia](https://github.com/the-deep-learners/study-group/blob/master/wiki-resources/IMG_7641.JPG)
 
@@ -54,13 +53,13 @@ In chronological order, we have experienced the joy of being enlightened by:
 1. [Katya Vasilaky](https://kathrynthegreat.github.io/) on the mathematics of deep learning (*session II*) and on regularization (*session VIII*)
 2. [Thomas Balestri](https://www.linkedin.com/in/thomasbalestri) on countless machine-learning underpinnings (*sessions III and IV*), LSTM gates (*session XII*), and Reinforcement Learning (*session XIV*)
 3. [Gabe Rives-Corbett](https://www.linkedin.com/in/grivescorbett) on Keras implementations of deep learning deployed at [untapt](https://www.untapt.com/) (*session III*)
-2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko) on his NumPy implementation of *k*-Nearest Neighbours (*session VI*)
+2. [Dmitri Nesterenko](https://github.com/dmitrinesterenko) on his NumPy implementation of *k*-nearest neighbours (*session VI*) and capsule networks (*session XVII*)
 3. [Raphaela Sapire](https://www.linkedin.com/in/raphaelasapire) on the deep learning start-up investment atmosphere (*session VIII*)
-3. [Grant Beyleveld](https://grantbeyleveld.wordpress.com/) on his U-Net Convolutional Network (*session IX*) and GAN (*session XII*) implementations 
-3. [Jessica Graves](https://sefleuria.tumblr.com/) on applications of Deep Learning to the fashion industry (*session IX*)
+3. [Grant Beyleveld](https://grantbeyleveld.wordpress.com/) on his U-Net convolutional network (*session IX*), GANs (*session XII*), and transformer architectures (*session XVII*)
+3. [Jessica Graves](https://sefleuria.tumblr.com/) on applications of deep learning to the fashion industry (*session IX*)
 4. [V.T. Rajan](https://www.linkedin.com/in/vtrajanphd/) on deriving the word2vec algorithm (*session X*)
 5. Karl Habermas on his NumPy implemention of the word2vec algorithm (*session X*)
-6. David Epstein on Generative Adversarial Networks (*session X*)
+6. David Epstein on generative adversarial networks (*session X*)
 7. [Claudia Perlich](https://sites.google.com/site/claudiaperlich/home) on predictability and how it creates biases when your target is created by mixtures (*session XI*)
 8. [Brian Dalessandro](https://www.linkedin.com/in/briandalessandro/) on [generating text with Keras LSTM models](https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py) (*session XI*)
 9. [Marianne Monteiro](https://www.linkedin.com/in/mariannelinharesm/) on TensorFlow Recurrent Neural Network implementations (*session XIII*)
@@ -90,7 +89,7 @@ Click through for detailed summary notes from each session:
 14. [October 17th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week14): Reinforcement Learning
 15. [December 9th, 2017](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week15): Deep Reinforcement Learning (Deep Q-Learning and OpenAI Lab)
 16. [February 17th, 2018](https://github.com/the-deep-learners/study-group/tree/master/weekly-work/week16): Deep Reinforcement Learning (Policy Gradients and SLM-Lab)
-17. [October 16th, 2019](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week17/README.md): _Deep Learning Illustrated_ Book Launch, BERT/RoBERTa, and Capsule Networks
+17. [October 16th, 2019](https://github.com/the-deep-learners/study-group/blob/master/weekly-work/week17/README.md): _Deep Learning Illustrated_ Book Launch, Transformer Architectures, and Capsule Networks
 
 ***
 
